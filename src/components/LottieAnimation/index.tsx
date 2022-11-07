@@ -1,16 +1,8 @@
-import Lottie from 'react-lottie'
+import { Player } from '@lottiefiles/react-lottie-player'
 import animationData from '../../../public/lotties/comingsoon.json'
 import styles from './styles.module.css'
 
 export function LottieAnimation() {
-	const defaultOptions = {
-		loop: true,
-		autoplay: true,
-		animationData: animationData,
-		rendererSettings: {
-			preserveAspectRatio: 'xMidYMid slice',
-		},
-	}
 	return (
 		<>
 			<section className={styles.lottieAnimation}>
@@ -19,12 +11,7 @@ export function LottieAnimation() {
 					<p className={styles.description}>
 						Estamos preparando algo bem legal para você
 					</p>
-					<Lottie
-						className={styles.lottie}
-						options={defaultOptions}
-						height={600}
-						width={720}
-					/>
+					<Player className={styles.lottie} src={animationData} loop autoplay />
 				</div>
 			</section>
 		</>

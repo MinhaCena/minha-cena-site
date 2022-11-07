@@ -1,29 +1,55 @@
 .lottieAnimation{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 8.4rem;
+  position: fixed;
+  padding: 0 2.4rem;
 }
 .lottieAnimationContent{
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   margin-top: 2.4rem;
 }
 
 .soon{
-  font-size: var(--fs-h1-desktop);
+  font-size: var(--fs-h1-mobile);
   font-weight: 800;
-  color: var(--accent-ultramarine-2);
+  color: var(--accent-ultramarine-3);
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .description{
-  font-size: var(--fs-h3-mobile);
-  color: var(--gray-3);
+  text-align: center;
+  font-size: var(--fs-subtitle1-mobile);
+  color: var(--secondary-skyMagenta-1);
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 
-.lottie{
-  width: 100%;
+
+@media (min-width: 768px) {
+  .lottie{
+    width: 800px;
+    height: 640px ;
+  }
+  
+  .soon{
+    font-size: var(--fs-h1-desktop);
+  }
+
+  .description{
+    font-size: var(--fs-subtitle1-desktop);
+  }
+}
+
+@media (min-width: 1440px) {
+  .lottieAnimation{
+    padding: 0;
+  }
 }
