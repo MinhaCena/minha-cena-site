@@ -1,0 +1,29 @@
+.lottieAnimation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lottieAnimationContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.soon{
+  font-size: var(--fs-h1-desktop);
+  font-weight: 800;
+  color: var(--accent-ultramarine-2);
+  text-transform: uppercase;
+}
+
+.description{
+  font-size: var(--fs-h3-mobile);
+  color: var(--gray-3);
+}
+
+.lottie{
+  width: 100%;
+}
