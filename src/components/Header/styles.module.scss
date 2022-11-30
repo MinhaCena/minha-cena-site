@@ -1,0 +1,111 @@
+.header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 2.4rem;
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+
+  .headerContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerNav{
+      display: flex;
+      .headerNavLink{
+        display: inline-flex;
+        font-size: $fs-btn-link-s;
+				color: $secondary-xiketic-2;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 4.8rem;
+        position: relative;
+        transition: transform 360ms;
+        padding: 6px 0;
+        &:hover{
+          transform: scale(1.3);
+          color: $primary-byzantine-2;
+        }
+
+        &::after{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        &:hover::after{
+          border-bottom: 3px solid $primary-byzantine-2;
+
+        }
+      }
+    }
+
+    .headerAction{
+
+      .headerActionSubscribe{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 17.6rem;
+        height: 4rem;
+        border-radius: 12px;
+        background: $gradient-4;
+        font-size: $fs-btn-link-m;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $gray-12;
+				transition: transform 360ms;
+
+				&:hover{
+					background: $gradient-0;
+					transform: scale(1.1);
+				}
+
+				svg{
+         margin-left: 8px;
+				}
+      }
+
+			.headerActionLogin{
+				display: inline-flex;
+				align-items: center;
+        justify-content: center;
+				width:13.6rem;
+				height: 4rem;
+				border-radius: 12px;
+				margin-left: 1.6rem;
+				font-size: $fs-btn-link-m;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $primary-byzantine-2;
+				transition: transform 360ms;
+
+				&:hover{
+					background: $gradient-0;
+					color: $gray-12;
+					transform: scale(1.1);
+					svg{
+						fill: $gray-12;
+					}
+				}
+				svg{
+					margin-left: 8px;
+					fill: $primary-byzantine-2;
+				}
+
+			}
+    }
+  }
+}
+
