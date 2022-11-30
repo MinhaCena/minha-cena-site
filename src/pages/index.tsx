@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 import { LottieAnimation } from '../components/LottieAnimation'
 //import Blob from '../../public/shapes/blob.svg'
 
-import styles from '../styles/pages/home.module.css'
+import styles from '../styles/pages/home.module.scss'
 
 const Home: NextPage = () => {
 	return (

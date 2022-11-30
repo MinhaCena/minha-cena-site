@@ -16,17 +16,17 @@
 }
 
 .soon{
-  font-size: var(--fs-h1-mobile);
+  font-size: $fs-h1-mobile;
   font-weight: 800;
-  color: var(--accent-ultramarine-3);
+  color: $accent-ultramarine-3;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .description{
   text-align: center;
-  font-size: var(--fs-subtitle1-mobile);
-  color: var(--secondary-skyMagenta-1);
+  font-size: $fs-subtitle1-mobile;
+  color: $secondary-skyMagenta-1;
   font-weight: 600;
   padding: 0;
   margin: 0;
@@ -40,11 +40,11 @@
   }
   
   .soon{
-    font-size: var(--fs-h1-desktop);
+    font-size: $fs-h1-desktop;
   }
 
   .description{
-    font-size: var(--fs-subtitle1-desktop);
+    font-size: $fs-subtitle1-desktop;
   }
 }
 
