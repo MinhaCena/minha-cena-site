@@ -1,6 +1,6 @@
 import { Player } from '@lottiefiles/react-lottie-player'
 import animationData from '../../../public/lotties/comingsoon.json'
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 
 export function LottieAnimation() {
 	return (

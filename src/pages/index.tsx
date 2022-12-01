@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { LottieAnimation } from '../components/LottieAnimation'
 //import Blob from '../../public/shapes/blob.svg'
 
-import styles from '../styles/pages/home.module.scss'
+import styles from '../styles/pages/home.module.css'
 
 const Home: NextPage = () => {
 	return (
@@ -24,7 +23,6 @@ const Home: NextPage = () => {
 					fill="#C669B5"
 				/>
 			</svg> */}
-			<Footer />
 		</div>
 	)
 }

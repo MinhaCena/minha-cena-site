@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 8.4rem;
+  position: fixed;
   padding: 0 2.4rem;
 }
 .lottieAnimationContent{
@@ -15,17 +16,17 @@
 }
 
 .soon{
-  font-size: $fs-h1-mobile;
+  font-size: var(--fs-h1-mobile);
   font-weight: 800;
-  color: $accent-ultramarine-3;
+  color: var(--accent-ultramarine-3);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .description{
   text-align: center;
-  font-size: $fs-subtitle1-mobile;
-  color: $secondary-skyMagenta-1;
+  font-size: var(--fs-subtitle1-mobile);
+  color: var(--secondary-skyMagenta-1);
   font-weight: 600;
   padding: 0;
   margin: 0;
@@ -37,13 +38,13 @@
     width: 800px;
     height: 640px ;
   }
-
+  
   .soon{
-    font-size: $fs-h1-desktop;
+    font-size: var(--fs-h1-desktop);
   }
 
   .description{
-    font-size: $fs-subtitle1-desktop;
+    font-size: var(--fs-subtitle1-desktop);
   }
 }
 
