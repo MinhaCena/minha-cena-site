@@ -4,10 +4,9 @@ const path = require('path')
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-}
-
-module.exports = {
-	nextConfig,
+	experimental: {
+		appDir: true,
+	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'src', 'styles')],
 		prependData: `
@@ -16,3 +15,5 @@ module.exports = {
 	 `,
 	},
 }
+
+module.exports = nextConfig

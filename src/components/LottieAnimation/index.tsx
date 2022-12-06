@@ -2,7 +2,7 @@ import { Player } from '@lottiefiles/react-lottie-player'
 import animationData from '../../../public/lotties/comingsoon.json'
 import styles from './styles.module.scss'
 
-export function LottieAnimation() {
+export default function LottieAnimation() {
 	return (
 		<>
 			<section className={styles.lottieAnimation}>

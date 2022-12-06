@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { RxInstagramLogo, RxLinkedinLogo } from 'react-icons/rx'
 import styles from './styles.module.scss'
 
-export function Footer() {
+export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<div className={`${styles.footerContent} container`}>
