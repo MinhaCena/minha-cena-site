@@ -1,0 +1,45 @@
+.sectionHero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.sectionHeroContent{
+		width: 100%;
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		.sectionHeroDescription{
+			margin-top: 7.2rem;
+
+			.sectionHeroTitle{
+				padding: 0;
+				margin: 0;
+				margin-top: 2.4rem;
+				width: 60rem;
+				font-size: $fs-h1-desktop;
+				line-height: 6.2rem;
+				font-weight: 800;
+				color: $secondary-xiketic-1;
+
+				.titleAccent{
+					color: $accent-ultramarine-1;
+				}
+				.titleByzantine{
+					color: $primary-byzantine-1;
+				}
+			}
+
+			.sectionHeroInfo{
+				padding: 0;
+				margin: 0;
+				margin-top: 1.6rem;
+				width: 600px;
+				font-size: $fs-subtitle2-desktop;
+				font-weight: 700;
+				line-height: 3rem;
+				color: $secondary-xiketic-2;
+			}
+		}
+	}
+}

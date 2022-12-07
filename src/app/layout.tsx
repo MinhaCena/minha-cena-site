@@ -25,13 +25,9 @@ export default function RootLayout({
 				<title>Minha Cena</title>
 			</head>
 			<body>
-				<header>
-					<Header />
-				</header>
-				<main>{children}</main>
-				<footer>
-					<Footer />
-				</footer>
+				<Header />
+				<div>{children}</div>
+				<Footer />
 			</body>
 		</html>
 	)
