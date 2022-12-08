@@ -13,16 +13,16 @@ export default function Header() {
 					<Link className={styles.headerNavLink} href="/">
 						Início
 					</Link>
-					<Link className={styles.headerNavLink} href="/sobre">
+					<Link className={styles.headerNavLink} href="#sobre-nos">
 						Sobre Nós
 					</Link>
-					<Link className={styles.headerNavLink} href="/proposta">
+					<Link className={styles.headerNavLink} href="#proposta">
 						Proposta
 					</Link>
-					<Link className={styles.headerNavLink} href="/como-fazer-parte">
+					<Link className={styles.headerNavLink} href="#como-fazer-parte">
 						Como Fazer Parte?
 					</Link>
-					<Link className={styles.headerNavLink} href="/parceiros">
+					<Link className={styles.headerNavLink} href="#parceiros">
 						Parceiros
 					</Link>
 				</nav>

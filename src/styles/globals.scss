@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+		scroll-behavior: smooth;
 }
 
 html,
@@ -8,6 +9,7 @@ body {
   margin: 0;
   font-family: "Mulish",  sans-serif;
   /*font-family: "Euclid Circular B Medium", sans-serif;*/
+	background-color: $gray-12;
 }
 
 
