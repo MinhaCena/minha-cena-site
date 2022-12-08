@@ -1,0 +1,76 @@
+.sectionAbout{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	.sectionAboutContent{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.sectionAboutDescription{
+			width: 600px;
+			margin-top: 16rem;
+			display: flex;
+			flex-direction: column;
+			background: no-repeat url("../../../public/img/background-about.svg");
+			background-position: left -64px  bo;
+			background-size: 600px 580px;
+
+			.sectionAboutTitle{
+				width: 46rem;
+				margin: 0;
+				position: relative;
+				font-size: $fs-h2-desktop;
+				padding-bottom: 1.6rem;
+				color: $secondary-xiketic-1;
+
+				.titleByzantine{
+					color: $primary-byzantine-1;
+				}
+
+				&::after{
+					content: "";
+					width: 9.2rem;
+					margin-right: 0.4rem;
+					border-bottom: 2px solid $primary-byzantine-0;
+					position: absolute;
+					top: 0;
+         	right: 0;
+					bottom: 0;
+				}
+			}
+
+			.sectionAboutInfo_1,
+			.sectionAboutInfo_2{
+				font-size: $text-lg;
+				color: $secondary-xiketic-2;
+				margin: 0;
+			}
+
+			.sectionAboutInfo_1{
+				margin-top: 2.4rem;
+			}
+			.sectionAboutInfo_2{
+				margin-top: 1.6rem;
+			}
+
+			.sectionAboutGreeting{
+				font-size: $fs-subtitle2-desktop;
+				font-weight: 800;
+				color: $secondary-xiketic-2;
+				margin-top: 1.6rem;
+
+				.sectionAboutGreetingGradient{
+					font-weight: 800;
+					background: $gradient-1;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+
+		}
+	}
+}

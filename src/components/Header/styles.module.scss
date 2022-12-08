@@ -9,6 +9,8 @@
 	position: sticky;
 	top: 0;
 	background: $gray-12;
+	border-bottom: 1px solid $primary-byzantine-6;
+	z-index: 3;
 
   @media (min-width: 1440px) {
     padding: 0;
