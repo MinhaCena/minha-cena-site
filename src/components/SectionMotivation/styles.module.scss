@@ -1,0 +1,145 @@
+.sectionMotivation{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.sectionMotivationContent_1,
+	.sectionMotivationContent_2{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+	}
+
+	.sectionMotivationContent_1{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		.sectionMotivationTitle{
+			width: 680px;
+			font-size: $fs-h2-desktop;
+			color: $secondary-xiketic-1;
+			padding: 0;
+			padding-bottom: 1.6rem;
+			margin: 0;
+			position: relative;
+			.titleUltramarine{
+				color: $accent-ultramarine-1;
+			}
+			&::after{
+				content: "";
+				width: 9.2rem;
+				margin-right: 0.4rem;
+				border-bottom: 2px solid $accent-ultramarine-0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+	}
+
+	.sectionMotivationGoals{
+		background: $gradient-5;
+		width: 100%;
+
+		.sectionMotivationContent_2{
+			display: flex;
+			flex-direction: column;
+
+			.sectionMotivationGoalsContent{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.sectionMotivationGoal{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: baseline;
+					width: 40rem;
+					height: 22.4rem;
+					background: $gray-12;
+					border-radius: 12px;
+					padding: 4.8rem 5.6rem;
+					transition: transform 380ms ease-out;
+
+					&:hover{
+						transform: scale(1.1);
+					}
+
+
+					.sectionMotivationGoalHeader{
+						width: 100%;
+						display: flex;
+						align-items: center;
+						.sectionMotivationGoalSubtitle{
+							font-size: $fs-subtitle2-desktop;
+							font-weight: 800;
+							color: $secondary-xiketic-3;
+							margin: 0;
+							margin-left: 1.6rem;
+							max-width: 200px;
+						}
+
+					}
+					.sectionMotivationGoalDescription{
+						display: flex;
+						font-size: $text-sm;
+						font-weight: 700;
+						color: $secondary-xiketic-3;
+						margin: 0;
+						padding: 0;
+						margin-top: 3.2rem;
+					}
+
+					.sectionMotivationGoalDescription_1{
+						position: relative;
+						&::before{
+							content: "";
+							width: 7.2rem;
+							border-bottom: 2px solid $accent-ultramarine-1;
+							position: absolute;
+							top: -80px;
+							right: 0;
+							bottom: 64px;
+						}
+
+					}
+					.sectionMotivationGoalDescription_2{
+						position: relative;
+						&::before{
+							content: "";
+							width: 7.2rem;
+							border-bottom: 2px solid $primary-byzantine-1;
+							position: absolute;
+							top: -80px;
+							right: 0;
+							bottom: 64px;
+						}
+
+					}
+					.sectionMotivationGoalDescription_3{
+						position: relative;
+						&::before{
+							content: "";
+							width: 7.2rem;
+							border-bottom: 2px solid $accent-ultramarine-3;
+							position: absolute;
+							top: -80px;
+							right: 0;
+							bottom: 64px;
+						}
+
+					}
+
+				}
+			}
+
+		}
+
+	}
+}

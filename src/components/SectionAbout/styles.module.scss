@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 100;
 
 	.sectionAboutContent{
 		width: 100%;
@@ -16,8 +16,9 @@
 			display: flex;
 			flex-direction: column;
 			background: no-repeat url("../../../public/img/background-about.svg");
-			background-position: left -64px  bo;
+			background-position: left -96px top 0;
 			background-size: 600px 580px;
+			padding-bottom: 24rem;
 
 			.sectionAboutTitle{
 				width: 46rem;
