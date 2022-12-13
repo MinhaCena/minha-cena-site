@@ -1,0 +1,91 @@
+.sectionSubscribe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: $gradient-6;
+
+	.sectionSubscribeContent{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		color: $gray-12;
+
+		.sectionSubscribeTitle{
+			font-size: $fs-h2-desktop;
+			text-align: center;
+			color: $gray-12;
+			//-webkit-text-stroke: 1px $secondary-xiketic-1;
+			letter-spacing: 2px;
+			font-weight: 800;
+			text-shadow:
+			-1px -1px 0 $secondary-xiketic-1,
+			 1px -1px 0 $secondary-xiketic-1,
+			 -1px 1px 0 $secondary-xiketic-1,
+				1px 1px 0 $secondary-xiketic-1;
+
+		}
+
+		.sectionSubscribeAction{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.sectionSubscribeRoles{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				height: 300px;
+				border-radius: 12px;
+				background-image: url('../../../public/img/versus.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+
+				.sectionSubscribeIllustrator{
+					display: flex;
+					flex-direction: column;
+					margin-left: 10.4rem;
+				}
+
+				.sectionSubscribeTeacher{
+					display: flex;
+					flex-direction: column;
+					margin-right: 10.4rem;
+				}
+
+				.sectionSubscribeSubtitle{
+					text-align: center;
+					font-size: $fs-h3-desktop;
+					font-weight: 800;
+					margin: 0;
+					text-shadow:
+					-1px -1px 0 $secondary-xiketic-1,
+					 1px -1px 0 $secondary-xiketic-1,
+					 -1px 1px 0 $secondary-xiketic-1,
+						1px 1px 0 $secondary-xiketic-1;
+				}
+
+				.sectionSubscribeRoleDescription{
+					width: 440px;
+					margin: 0;
+					margin-top: 4.0rem;
+					font-size: $text-lg;
+					font-weight: 700;
+					text-shadow:
+					-1px -1px 0 $secondary-xiketic-1,
+					 1px -1px 0 $secondary-xiketic-1,
+					 -1px 1px 0 $secondary-xiketic-1,
+						1px 1px 0 $secondary-xiketic-1;
+				}
+
+			}
+
+			.sectionSubscribeLinks{
+				display: flex;
+			}
+
+		}
+	}
+}

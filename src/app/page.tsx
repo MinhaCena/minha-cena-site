@@ -3,6 +3,7 @@
 import SectionAbout from '../components/SectionAbout/indext'
 import SectionHero from '../components/SectionHero'
 import SectionMotivation from '../components/SectionMotivation'
+import SectionSubscribe from '../components/SectionSubscribe'
 
 export default function Page() {
 	return (
@@ -10,6 +11,7 @@ export default function Page() {
 			<SectionHero />
 			<SectionAbout />
 			<SectionMotivation />
+			<SectionSubscribe />
 		</>
 	)
 }

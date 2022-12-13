@@ -12,7 +12,7 @@ export default function SectionMotivation() {
 				</h2>
 			</div>
 			<svg
-				viewBox="0 0 1363 120"
+				viewBox="0 0 1366 120"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
