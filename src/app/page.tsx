@@ -1,6 +1,6 @@
 //import Blob from '../../public/shapes/blob.svg'
 
-import SectionAbout from '../components/SectionAbout/indext'
+import SectionAbout from '../components/SectionAbout'
 import SectionHero from '../components/SectionHero'
 import SectionMotivation from '../components/SectionMotivation'
 import SectionRecommend from '../components/SectionRecommend'
