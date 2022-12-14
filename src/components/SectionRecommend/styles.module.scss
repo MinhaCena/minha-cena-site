@@ -1,0 +1,70 @@
+.sectionRecommend{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $gradient-7;
+
+	.sectionRecommendContent{
+		width: 100%;
+		margin-top: 8rem;
+		justify-content: space-between;
+		display: flex;
+
+		.sectionRecommendDescription{
+			width: 600px;
+
+			.sectionRecommendTitle{
+				color: $secondary-xiketic-1;
+				font-size: $fs-h2-desktop;
+				font-weight: 800;
+
+				.titleGradient{
+					background: $gradient-0;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+
+			.sectionRecommendSubtitle{
+				color: $secondary-xiketic-2;
+				font-size: $fs-subtitle2-desktop;
+				font-weight: 800;
+			}
+		}
+
+		.sectionRecommendForm{
+			width: 480px;
+			display: flex;
+			padding: 1.6rem 4.0rem 4.0rem;
+			flex-direction: column;
+			background: $gray-12;
+			border-radius: 20px;
+
+			.sectionRecommendFormFunctionLabel{
+				font-size: $text-md;
+				font-weight: 700;
+				color: $secondary-xiketic-2;
+				margin-top: 2.4rem;
+				margin-bottom: 0.4rem;
+			}
+
+			.sectionRecommendFormFunctionSelect{
+				height: 3.2rem;
+				border-radius: 12px;
+				padding: 0 1.6rem;
+				appearance: none;
+				border: none;
+				border: 1px solid $gray-7;
+				background-color: transparent;
+				font-family: 'Mulish', sans-serif;
+				color: $secondary-xiketic-3;
+
+			}
+			.sectionRecommendFormAddress{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+}
