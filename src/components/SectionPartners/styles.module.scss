@@ -1,0 +1,58 @@
+.sectionPartners{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 12rem;
+
+	.sectionPartnersContent{
+		width: 100%;
+
+		.sectionPartnersTitle{
+			width: 96rem;
+			padding-bottom: 1.6rem;
+			font-size: $fs-h2-desktop;
+			color: $secondary-xiketic-1;
+			font-weight: 800;
+			position: relative;
+			margin: 0;
+			.titleGradient{
+				background: $gradient-1;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+			}
+			&::after{
+				content: "";
+				width: 10rem;
+				margin-right: 4rem;
+				border-bottom: 2px solid $accent-ultramarine-0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+		.sectionPartnersList{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 14rem;
+			.sectionPartnerLogo{
+				border: 0;
+  			background-repeat: no-repeat;
+  			background-size: contain;
+  			filter: grayscale(100%);
+
+  			&:hover {
+    			filter: none;
+  			}
+			}
+			.sectionPartnerLogoAiesec{
+				filter: opacity(60%);
+			}
+		}
+
+	}
+}
