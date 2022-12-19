@@ -1,4 +1,5 @@
 import SectionAbout from '../components/SectionAbout'
+import SectionContact from '../components/SectionContact'
 import SectionHero from '../components/SectionHero'
 import SectionMotivation from '../components/SectionMotivation'
 import SectionPartners from '../components/SectionPartners'
@@ -14,6 +15,7 @@ export default function Page() {
 			<SectionSubscribe />
 			<SectionRecommend />
 			<SectionPartners />
+			<SectionContact />
 		</>
 	)
 }
