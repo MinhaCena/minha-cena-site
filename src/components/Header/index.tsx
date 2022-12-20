@@ -11,7 +11,7 @@ export default function Header() {
 				<Image src={logo} alt="Minha Cena" width={170} />
 				<nav className={styles.headerNav}>
 					<Link className={styles.headerNavLink} href="/">
-						Início
+						Home
 					</Link>
 					<Link className={styles.headerNavLink} href="#sobre-nos">
 						Sobre Nós

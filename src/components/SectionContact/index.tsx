@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import InputField from '../InputField'
+import InputField from '../UI/InputField'
 import styles from './styles.module.scss'
 
 export default function SectionContact() {

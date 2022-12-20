@@ -6,17 +6,26 @@
 	.sectionHeroContent{
 		width: 100%;
 		display: inline-flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: space-between;
 
+		.sectionHeroImage{
+			align-self: flex-end;
+			margin-top: 5.6rem;
+		}
+
 		.sectionHeroDescription{
+			width: 61.2rem;
+			display: flex;
+			flex-direction: column;
 			margin-top: 7.2rem;
+
 
 			.sectionHeroTitle{
 				padding: 0;
 				margin: 0;
 				margin-top: 2.4rem;
-				width: 60rem;
+				width: 54.8rem;
 				font-size: $fs-h1-desktop;
 				line-height: 6.2rem;
 				font-weight: 800;
@@ -31,14 +40,29 @@
 			}
 
 			.sectionHeroInfo{
+				width: 100%;
 				padding: 0;
 				margin: 0;
 				margin-top: 1.6rem;
-				width: 600px;
-				font-size: $fs-subtitle2-desktop;
-				font-weight: 700;
+				margin-bottom: 3.2rem;
+				letter-spacing: 1px;
+				font-size: $text-lg;
+				font-weight: 400;
 				line-height: 3rem;
 				color: $secondary-xiketic-2;
+
+				.infoAccentUtramarine,
+				.infoAccentByzantine{
+					font-weight: 400;
+				}
+
+				.infoAccentUtramarine{
+					color: $accent-ultramarine-1;
+				}
+				.infoAccentByzantine{
+					color: $primary-byzantine-1;
+				}
+
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player'
-import animationData from '../../../public/lotties/comingsoon.json'
+import animationData from '../../../../public/lotties/comingsoon.json'
 import styles from './styles.module.scss'
 
 export default function LottieAnimation() {
