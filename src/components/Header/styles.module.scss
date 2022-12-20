@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  height: 80px;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +23,13 @@
     justify-content: space-between;
 
     .headerNav{
-			height: 80px;
+			height: 88px;
       display: flex;
 			align-items: center;
 			justify-content: center;
       .headerNavLink{
         display: inline-flex;
-				height: 80px;
+				height: 88px;
 				padding: 3.2rem;
         font-size: $fs-btn-link-m;
 				color: $secondary-xiketic-2;
@@ -44,7 +44,7 @@
 					left: 0;
 					background: $gradient-7;
 					opacity: 0;
-					transition: 350ms ease-out;
+					transition: 550ms ease-in-out;
 					z-index: -1;
 				}
 				&:hover::after{
@@ -69,56 +69,91 @@
     }
 
     .headerAction{
+			display: flex;
 
-      .headerActionSubscribe{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 17.6rem;
-        height: 4rem;
-        border-radius: 12px;
-        background: $gradient-4;
-        font-size: $fs-btn-link-m;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: $gray-12;
-				transition: transform 360ms;
-
-				&:hover{
-					background: $gradient-0;
-					transform: scale(1.1);
-				}
-
-				svg{
-         margin-left: 8px;
-				}
-      }
-
-			.headerActionLogin{
+			.headerActionSubscribe{
+				width: 25.6rem;
+				height: 4.8rem;
 				display: inline-flex;
 				align-items: center;
-        justify-content: center;
-				width:13.6rem;
-				height: 4rem;
-				border-radius: 12px;
-				margin-left: 1.6rem;
+				justify-content: center;
+				position: relative;
+				border-radius: 8px;
 				font-size: $fs-btn-link-m;
 				font-weight: 600;
-				text-transform: uppercase;
-				color: $primary-byzantine-2;
-				transition: transform 360ms;
+				color: $accent-ultramarine-1;
+				border: 2px solid $accent-ultramarine-1;
+				svg{
+					fill: $accent-ultramarine-1;
+					margin-left: 4px;
+				}
 
 				&:hover{
-					background: $gradient-0;
 					color: $gray-12;
-					transform: scale(1.1);
 					svg{
 						fill: $gray-12;
 					}
 				}
+				&::after{
+					content: "";
+					width: 100%;
+					height: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: $gray-12;
+					transition: 550ms ease-in-out;
+					z-index: -1;
+
+				}
+				&:hover::after{
+				  opacity: 1;
+    			height: 100%;
+    			background: $accent-ultramarine-1;
+				}
+
+			}
+
+			.headerActionLogin{
+				width: 12.8rem;
+				height: 4.8rem;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-left: 1.6rem;
+				position: relative;
+				border-radius: 8px;
+				font-size: $fs-btn-link-m;
+				font-weight: 600;
+				color: $primary-byzantine-1;
+				border: 2px solid $primary-byzantine-1;
 				svg{
-					margin-left: 8px;
-					fill: $primary-byzantine-2;
+					fill: $primary-byzantine-1;
+					margin-left: 4px;
+				}
+
+				&:hover{
+					color: $gray-12;
+					svg{
+						fill: $gray-12;
+					}
+				}
+				&::after{
+					content: "";
+					width: 100%;
+					height: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: $gray-12;
+					transition: 550ms ease-in-out;
+					z-index: -1;
+
+				}
+				&:hover::after{
+				  opacity: 1;
+    			height: 100%;
+    			background: $primary-byzantine-1;
 				}
 
 			}

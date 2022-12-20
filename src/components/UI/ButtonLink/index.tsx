@@ -9,7 +9,6 @@ interface IButtonLink {
 	backgroundColor?: string
 	backgroundColorHover: string
 	fontColor?: string
-	border?: string
 }
 
 export default function ButtonLink({
@@ -19,7 +18,6 @@ export default function ButtonLink({
 	backgroundColor,
 	backgroundColorHover,
 	fontColor,
-	border,
 }: IButtonLink) {
 	const [isHover, setIsHover] = useState(false)
 
@@ -35,7 +33,6 @@ export default function ButtonLink({
 		width: `${width}`,
 		background: isHover ? `${backgroundColorHover}` : `${backgroundColor}`,
 		color: `${fontColor}`,
-		border: `1px solid ${border}`,
 	}
 
 	return (
