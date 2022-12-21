@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import styles from './styles.module.scss'
 
@@ -73,7 +72,7 @@ export default function SectionMotivation() {
 							</p>
 						</div>
 						<div
-							className={`${styles.sectionMotivationGoal} ${styles.sectionMotivationGoal_2} `}
+							className={`${styles.sectionMotivationGoal} ${styles.sectionMotivationGoal_3} `}
 						>
 							<div className={styles.sectionMotivationGoalHeader}>
 								<Image
@@ -96,7 +95,6 @@ export default function SectionMotivation() {
 							</p>
 						</div>
 					</div>
-					<Link href="/">FAÇA A DIFERENÇA COM A GENTE</Link>
 				</div>
 			</div>
 		</section>

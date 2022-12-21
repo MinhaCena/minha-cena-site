@@ -1,5 +1,6 @@
+'use client'
 import Image from 'next/image'
-import Link from 'next/link'
+import ButtonLink from '../UI/ButtonLink'
 import styles from './styles.module.scss'
 
 export default function SectionAbout() {
@@ -31,13 +32,19 @@ export default function SectionAbout() {
 							MinhaCena.Org!
 						</b>
 					</span>
-					<Link href="/">FAÇA A DIFERENÇA COM A GENTE</Link>
+					<ButtonLink
+						label="Vem fazer a diferença com a gente"
+						href="/"
+						width="40rem"
+						backgroundColor="#A84E97"
+						backgroundColorHover="#662F5C"
+					/>
 				</div>
 				<Image
 					className={styles.sectionAboutImage}
-					src="/img/about-image.png"
-					width={600}
-					height={680}
+					src="/img/about.png"
+					width={500}
+					height={500}
 					alt="Logo Minha Cena"
 				/>
 			</div>

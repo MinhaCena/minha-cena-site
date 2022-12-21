@@ -29,8 +29,9 @@
 			justify-content: center;
       .headerNavLink{
         display: inline-flex;
+				align-items: center;
 				height: 88px;
-				padding: 3.2rem;
+				padding: 0 2.4rem;
         font-size: $fs-btn-link-m;
 				color: $secondary-xiketic-2;
         font-weight: 600;

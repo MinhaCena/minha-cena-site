@@ -1,3 +1,5 @@
+'use client'
+import ButtonLink from '../UI/ButtonLink'
 import InputField from '../UI/InputField'
 import styles from './styles.module.scss'
 
@@ -87,6 +89,13 @@ export default function SectionRecommend() {
 						</option>
 						<option value="outros">Outros</option>
 					</select>
+					<ButtonLink
+						label="Indicar o projeto para minha escola!"
+						href="/"
+						width="40rem"
+						backgroundColor="linear-gradient(131.35deg, #C46D7F -21.82%, #7551E3 124.67%)"
+						backgroundColorHover="linear-gradient(135deg, #662F5C 0%, #2D0999 100%)"
+					/>
 				</form>
 			</div>
 		</section>

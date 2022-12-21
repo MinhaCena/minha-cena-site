@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 16rem;
 
 	.sectionMotivationContent_1,
 	.sectionMotivationContent_2{
@@ -20,15 +21,17 @@
 		.sectionMotivationTitle{
 			width: 680px;
 			font-size: $fs-h2-desktop;
+			font-weight: 800;
 			color: $secondary-xiketic-1;
 			padding: 0;
 			padding-bottom: 1.6rem;
 			margin: 0;
 			position: relative;
+			text-align: right;
 			.titleUltramarine{
 				color: $accent-ultramarine-1;
 			}
-			&::after{
+			/*&::after{
 				content: "";
 				width: 9.2rem;
 				margin-right: 0.4rem;
@@ -37,7 +40,7 @@
 				top: 0;
 				left: 0;
 				bottom: 0;
-			}
+			} */
 		}
 
 	}
@@ -63,14 +66,52 @@
 					width: 40rem;
 					height: 22.4rem;
 					background: $gray-12;
-					border-radius: 12px;
-					padding: 4.8rem 5.6rem;
-					transition: transform 380ms ease-out;
+					border-radius: 8px;
+					padding: 3.2rem 5.6rem;
+					position: relative;
+					z-index: 1;
+					color: $secondary-xiketic-3;
+					transition: color 990ms ease;
 
 					&:hover{
-						transform: scale(1.1);
+						color: $gray-12;
 					}
 
+					&::before{
+						content: "";
+						margin: 0 5.6rem;
+						border-bottom: 2px solid $accent-ultramarine-1;
+						position: absolute;
+						top: 0;
+						bottom: 104px;
+						right: 0;
+						left: 0;
+						transition: border-bottom 990ms ease;
+					}
+					&:hover::before{
+						border-bottom: 2px solid $gray-12;
+					}
+
+					&::after{
+						content: "";
+						width: 100%;
+						height: 0;
+						position: absolute;
+						top: 0;
+						left: 0;
+						transition: 1s linear;
+						opacity: 0;
+						z-index: -1;
+						border-radius: 8px;
+						border-top-left-radius: 0;
+						border-top-right-radius: 0;
+
+					}
+					&:hover::after{
+						opacity: 1;
+						height: 100%;
+						background: $primary-byzantine-0;
+					}
 
 					.sectionMotivationGoalHeader{
 						width: 100%;
@@ -79,7 +120,6 @@
 						.sectionMotivationGoalSubtitle{
 							font-size: $fs-subtitle2-desktop;
 							font-weight: 800;
-							color: $secondary-xiketic-3;
 							margin: 0;
 							margin-left: 1.6rem;
 							max-width: 200px;
@@ -90,50 +130,69 @@
 						display: flex;
 						font-size: $text-sm;
 						font-weight: 700;
-						color: $secondary-xiketic-3;
 						margin: 0;
 						padding: 0;
-						margin-top: 3.2rem;
+						margin-top: 4rem;
 					}
 
 					.sectionMotivationGoalDescription_1{
-						position: relative;
-						&::before{
-							content: "";
-							width: 7.2rem;
-							border-bottom: 2px solid $accent-ultramarine-1;
-							position: absolute;
-							top: -80px;
-							right: 0;
-							bottom: 64px;
-						}
+
 
 					}
 					.sectionMotivationGoalDescription_2{
-						position: relative;
-						&::before{
-							content: "";
-							width: 7.2rem;
-							border-bottom: 2px solid $primary-byzantine-1;
-							position: absolute;
-							top: -80px;
-							right: 0;
-							bottom: 64px;
-						}
+
 
 					}
 					.sectionMotivationGoalDescription_3{
-						position: relative;
-						&::before{
-							content: "";
-							width: 7.2rem;
-							border-bottom: 2px solid $accent-ultramarine-3;
-							position: absolute;
-							top: -80px;
-							right: 0;
-							bottom: 64px;
-						}
 
+					}
+
+				}
+				.sectionMotivationGoal_1,
+				.sectionMotivationGoal_2,
+				.sectionMotivationGoal_3{
+					position: relative;
+					display: flex;
+					width: 40rem;
+					height: 22.4rem;
+					border-radius: 8px;
+
+
+				}
+
+				.sectionMotivationGoal_1{
+					order: 2;
+					border-top: 8px solid $accent-ultramarine-1;
+					&::before{
+						border-bottom: 2px solid $accent-ultramarine-1;
+					}
+					&:hover::after{
+						background: $accent-ultramarine-1;
+					}
+
+
+				}
+				.sectionMotivationGoal_2{
+					border-top: 8px solid $primary-byzantine-1;
+					&::before{
+						border-bottom: 2px solid $primary-byzantine-1;
+					}
+					&:hover::after{
+						background: $primary-byzantine-1;
+					}
+
+				}
+				.sectionMotivationGoal_3{
+					background: linear-gradient(white, white) padding-box,
+					linear-gradient(135deg, #A84E61 0%, #470FF4 100%) border-box;
+					border-radius: 8px;
+					border-top: 8px solid transparent;
+					&::before{
+						border-bottom: 2px solid #A84E61;
+					}
+
+					&:hover::after{
+						background: linear-gradient(135deg, #A84E61 0%, #470FF4 100%);
 					}
 
 				}
