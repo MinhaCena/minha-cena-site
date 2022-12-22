@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	background: $gradient-6;
+	padding-top: 9.6rem;
 
 	.sectionSubscribeContent{
 		display: flex;
@@ -13,16 +14,26 @@
 
 		.sectionSubscribeTitle{
 			font-size: $fs-h2-desktop;
-			text-align: center;
-			color: $gray-12;
-			//-webkit-text-stroke: 1px $secondary-xiketic-1;
-			letter-spacing: 2px;
+			text-align: left;
+			color: $secondary-xiketic-1;
 			font-weight: 800;
+			//-webkit-text-stroke: 1px $secondary-xiketic-1;
+			/*letter-spacing: 2px;
 			text-shadow:
 			-1px -1px 0 $secondary-xiketic-1,
 			 1px -1px 0 $secondary-xiketic-1,
 			 -1px 1px 0 $secondary-xiketic-1,
-				1px 1px 0 $secondary-xiketic-1;
+				1px 1px 0 $secondary-xiketic-1;*/
+
+				.sectionSubscribeTitleGradient{
+					font-weight: 800;
+					background: linear-gradient(175deg, #A84E61 0%, #470FF4 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					text-fill-color: transparent;
+
+				}
 
 		}
 
@@ -30,62 +41,119 @@
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-around;
 			.sectionSubscribeRoles{
+				width: 100%;
 				display: flex;
+				flex-direction: row-reverse;
 				align-items: center;
 				justify-content: space-between;
-				width: 100%;
-				height: 300px;
+				margin-top: 4.8rem;
+				/*height: 300px;
 				border-radius: 12px;
 				background-image: url('../../../public/img/versus.png');
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: 100% 100%;
+				background-size: 100% 100%;*/
+
+				.sectionSubscribeIllustrator,
+				.sectionSubscribeTeacher{
+					width: 600px;
+					height: auto;
+					border-radius: 8px;
+					background: $gray-12;
+					padding: 2.4rem;
+				}
+
+
 
 				.sectionSubscribeIllustrator{
 					display: flex;
 					flex-direction: column;
-					margin-left: 10.4rem;
 				}
 
 				.sectionSubscribeTeacher{
 					display: flex;
 					flex-direction: column;
-					margin-right: 10.4rem;
 				}
 
-				.sectionSubscribeSubtitle{
+				.sectionSubscribeSubtitleTeacher,
+				.sectionSubscribeSubtitleIllustrator{
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
 					text-align: center;
 					font-size: $fs-h3-desktop;
 					font-weight: 800;
 					margin: 0;
-					text-shadow:
-					-1px -1px 0 $secondary-xiketic-1,
-					 1px -1px 0 $secondary-xiketic-1,
-					 -1px 1px 0 $secondary-xiketic-1,
-						1px 1px 0 $secondary-xiketic-1;
+					height: 256px;
+					border-radius: 8px;
 				}
+
+				.sectionSubscribeSubtitleTeacher,
+				.sectionSubscribeSubtitleIllustrator{
+					background-image: url('../../../public/img/teacher.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 100% 100%;
+					border-radius: 8px;
+					position: relative;
+					color: $gray-12;
+					z-index: 1;
+					text-shadow:
+					-1px -1px 0 $secondary-xiketic-3,
+					 1px -1px 0 $secondary-xiketic-3,
+					 -1px 1px 0 $secondary-xiketic-3,
+						1px 1px 0 $secondary-xiketic-3;
+
+						&::after{
+							content: '';
+							border-radius: 8px;
+							background: linear-gradient(180deg, rgba(66, 88, 247, 0) 0%, #1D34DE 57.88%, #001297 100%);
+  						opacity: 0.3;
+  						position: absolute;
+  						top: 0;
+  						right: 0;
+  						bottom: 0;
+  						left: 0;
+							z-index: -1;
+
+						}
+				}
+				.sectionSubscribeSubtitleTeacher{
+					background-image: url('../../../public/img/teacher.png');
+					&::after{
+						background: linear-gradient(180deg, rgba(66, 88, 247, 0) 0%, #1D34DE 57.88%, #001297 100%);
+					}
+				}
+				.sectionSubscribeSubtitleIllustrator{
+					background-image: url('../../../public/img/illustrator.png');
+					&::after{
+						background: linear-gradient(180deg, rgba(198, 105, 181, 0) 0%, #930078 57.88%, #420136 100%);
+					}
+
+				}
+
 
 				.sectionSubscribeRoleDescription{
-					width: 440px;
 					margin: 0;
-					margin-top: 4.0rem;
+					margin: 2.4rem 0;
 					font-size: $text-lg;
-					font-weight: 700;
-					text-shadow:
+					font-weight: 400;
+					color: $secondary-xiketic-2;
+					line-height: 2.6rem;
+					/*text-shadow:
 					-1px -1px 0 $secondary-xiketic-1,
 					 1px -1px 0 $secondary-xiketic-1,
 					 -1px 1px 0 $secondary-xiketic-1,
-						1px 1px 0 $secondary-xiketic-1;
+						1px 1px 0 $secondary-xiketic-1;*/
+				}
+
+				.sectionSubscribeRoleLink{
+					margin-bottom: 2.4rem;
 				}
 
 			}
-
-			.sectionSubscribeLinks{
-				display: flex;
-			}
-
 		}
 	}
 }

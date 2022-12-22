@@ -12,19 +12,33 @@ export default function SectionAbout() {
 						Sobre nosso <b className={styles.titleByzantine}>projeto</b>
 					</h2>
 					<p className={styles.sectionAboutInfo_1}>
-						Somos um projeto <strong>sem fins lucrativos</strong> e de{' '}
-						<strong>acesso gratuito</strong>. Conectamos,{' '}
-						<strong>através de uma plataforma</strong>, profissionais da
-						educação que{' '}
-						<strong>enviam redações escritas por seus alunos</strong> à
-						ilustradores voluntários que
-						<strong> desenham essas histórias</strong> em formato de história em
-						quadrinhos (HQ).
+						Somos um projeto{' '}
+						<strong className={styles.titleAccent}>sem fins lucrativos</strong>{' '}
+						e de{' '}
+						<strong className={styles.titleByzantine}>acesso gratuito</strong>.
+						Conectamos,{' '}
+						<strong className={styles.titleAccent}>
+							através de uma plataforma
+						</strong>
+						, profissionais da educação que{' '}
+						<strong className={styles.titleByzantine}>
+							enviam redações escritas por seus alunos
+						</strong>{' '}
+						à ilustradores voluntários que
+						<strong className={styles.titleAccent}>
+							{' '}
+							desenham essas histórias
+						</strong>{' '}
+						em formato de história em quadrinhos (HQ).
 					</p>
 					<p className={styles.sectionAboutInfo_2}>
-						Nossa metodologia é baseada em <strong>gamificação</strong>, unindo
-						ensino híbrido e tecnologia tornando os{' '}
-						<strong>alunos protagonistas de seu aprendizado</strong>.
+						Nossa metodologia é baseada em{' '}
+						<strong className={styles.titleByzantine}>gamificação</strong>,
+						unindo ensino híbrido e tecnologia tornando os{' '}
+						<strong className={styles.titleAccent}>
+							alunos protagonistas de seu aprendizado
+						</strong>
+						.
 					</p>
 					<span className={styles.sectionAboutGreeting}>
 						Muito prazer, somos a{' '}
@@ -43,8 +57,8 @@ export default function SectionAbout() {
 				<Image
 					className={styles.sectionAboutImage}
 					src="/img/about.png"
-					width={500}
-					height={500}
+					width={560}
+					height={560}
 					alt="Logo Minha Cena"
 				/>
 			</div>

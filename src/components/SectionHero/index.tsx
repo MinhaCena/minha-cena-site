@@ -42,7 +42,7 @@ export default function SectionHero() {
 					<ButtonLink
 						label="Faça parte de nosso projeto clicando aqui"
 						href="/"
-						width="40rem"
+						width="44rem"
 						backgroundColor="linear-gradient(131.35deg, #C46D7F -21.82%, #7551E3 124.67%)"
 						backgroundColorHover="linear-gradient(135deg, #662F5C 0%, #2D0999 100%)"
 					/>

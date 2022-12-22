@@ -19,7 +19,7 @@
 		align-items: flex-start;
 		justify-content: flex-end;
 		.sectionMotivationTitle{
-			width: 680px;
+			width: 696px;
 			font-size: $fs-h2-desktop;
 			font-weight: 800;
 			color: $secondary-xiketic-1;
@@ -30,6 +30,7 @@
 			text-align: right;
 			.titleUltramarine{
 				color: $accent-ultramarine-1;
+				font-weight: 800;
 			}
 			/*&::after{
 				content: "";
@@ -64,10 +65,9 @@
 					align-items: center;
 					justify-content: baseline;
 					width: 40rem;
-					height: 22.4rem;
 					background: $gray-12;
 					border-radius: 8px;
-					padding: 3.2rem 5.6rem;
+					padding: 3.2rem 4rem;
 					position: relative;
 					z-index: 1;
 					color: $secondary-xiketic-3;
@@ -79,11 +79,11 @@
 
 					&::before{
 						content: "";
-						margin: 0 5.6rem;
+						margin: 0 4rem;
 						border-bottom: 2px solid $accent-ultramarine-1;
 						position: absolute;
 						top: 0;
-						bottom: 104px;
+						bottom: 112px;
 						right: 0;
 						left: 0;
 						transition: border-bottom 990ms ease;
@@ -122,17 +122,19 @@
 							font-weight: 800;
 							margin: 0;
 							margin-left: 1.6rem;
-							max-width: 200px;
+							letter-spacing: 1px;
 						}
 
 					}
 					.sectionMotivationGoalDescription{
+						width: 100%;
 						display: flex;
-						font-size: $text-sm;
-						font-weight: 700;
+						font-size: $text-md;
+						font-weight: 600;
+						text-align: center;
 						margin: 0;
 						padding: 0;
-						margin-top: 4rem;
+						margin-top: 4.8rem;
 					}
 
 					.sectionMotivationGoalDescription_1{
@@ -154,10 +156,7 @@
 					position: relative;
 					display: flex;
 					width: 40rem;
-					height: 22.4rem;
 					border-radius: 8px;
-
-
 				}
 
 				.sectionMotivationGoal_1{

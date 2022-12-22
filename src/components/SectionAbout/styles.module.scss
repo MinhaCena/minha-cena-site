@@ -33,6 +33,7 @@
 
 				.titleByzantine{
 					color: $primary-byzantine-1;
+					font-weight: 800;
 				}
 
 		/* 		&::after{
@@ -53,6 +54,7 @@
 				color: $secondary-xiketic-2;
 				margin: 0;
 				text-align: center;
+				line-height: 2.6rem;
 			}
 
 			.sectionAboutInfo_1{
@@ -60,6 +62,14 @@
 			}
 			.sectionAboutInfo_2{
 				margin-top: 1.6rem;
+			}
+			.titleByzantine{
+				color: $primary-byzantine-1;
+				font-weight: 600;
+			}
+			.titleAccent{
+				color: $accent-ultramarine-1;
+				font-weight: 600;
 			}
 
 			.sectionAboutGreeting{
