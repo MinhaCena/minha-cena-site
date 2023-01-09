@@ -11,7 +11,6 @@
 
 		.sectionPartnersTitle{
 			width: 96rem;
-			padding-bottom: 1.6rem;
 			font-size: $fs-h2-desktop;
 			color: $secondary-xiketic-1;
 			font-weight: 800;
@@ -38,14 +37,15 @@
 		.sectionPartnersList{
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
-			margin-top: 14rem;
+			justify-content: center;
+			flex-wrap: wrap;
 			.sectionPartnerLogo{
 				border: 0;
   			background-repeat: no-repeat;
   			background-size: contain;
   			filter: grayscale(100%);
-
+				margin: 0 3.2rem;
+				margin-top: 10.4rem;
   			&:hover {
     			filter: none;
   			}

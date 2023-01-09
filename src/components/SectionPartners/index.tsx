@@ -41,10 +41,24 @@ export default function SectionPartners() {
 					/>
 					<Image
 						className={styles.sectionPartnerLogo}
+						src="/img/partners/colabora.svg"
+						width={252}
+						height={76}
+						alt="Colabora"
+					/>
+					<Image
+						className={styles.sectionPartnerLogo}
 						src="/img/partners/expoFavela.svg"
 						width={164}
 						height={76}
 						alt="Expo Favela"
+					/>
+					<Image
+						className={styles.sectionPartnerLogo}
+						src="/img/partners/idealist.svg"
+						width={252}
+						height={76}
+						alt="Idealist"
 					/>
 				</div>
 			</div>
