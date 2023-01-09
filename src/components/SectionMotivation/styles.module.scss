@@ -182,16 +182,13 @@
 
 				}
 				.sectionMotivationGoal_3{
-					background: linear-gradient(white, white) padding-box,
-					linear-gradient(135deg, #A84E61 0%, #470FF4 100%) border-box;
-					border-radius: 8px;
-					border-top: 8px solid transparent;
+					border-top: 8px solid #8B4EA8;;
 					&::before{
-						border-bottom: 2px solid #A84E61;
+						border-bottom: 2px solid #8B4EA8;
 					}
 
 					&:hover::after{
-						background: linear-gradient(135deg, #A84E61 0%, #470FF4 100%);
+						background: #8B4EA8;
 					}
 
 				}

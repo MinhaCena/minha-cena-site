@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import Image from 'next/image'
 import ButtonLink from '../UI/ButtonLink'
 import styles from './styles.module.scss'
 
@@ -15,14 +15,25 @@ export default function SectionSubscribe() {
 				</h2>
 				<div className={styles.sectionSubscribeAction}>
 					<div className={styles.sectionSubscribeRoles}>
-						<div className={styles.sectionSubscribeIllustrator}>
-							<h3 className={styles.sectionSubscribeSubtitleIllustrator}>
-								Ilustrador
-							</h3>
-							<p className={styles.sectionSubscribeRoleDescription}>
-								Como ilustrador, você poderá contribuir adotando uma redação com
-								intuito de dar vida a essa história com ilustrações incríveis,
-								gerando também conteúdo para seu portfolio.
+						<div className={styles.sectionSubscribeRoleIllustrator}>
+							<div className={styles.sectionSubscribeRoleHeader}>
+								<Image
+									className={styles.sectionSubscribeRoleImage}
+									src="/img/illustrator.png"
+									alt="Minha Cena"
+									width={442}
+									height={150}
+								/>
+								<h3 className={styles.sectionSubscribeRoleSubtitle}>
+									Ilustrador
+								</h3>
+							</div>
+							<p
+								className={`${styles.sectionSubscribeRoleDescription} ${styles.sectionSubscribeRoleDescriptionIllustrator} `}
+							>
+								Como professor, você poderá enviar redações elaboradas por seus
+								alunos para que um ilustrador as desenhe, incentivando seus
+								alunos lerem e escrever ainda mais.
 							</p>
 							<div className={styles.sectionSubscribeRoleLink}>
 								<ButtonLink
@@ -33,18 +44,29 @@ export default function SectionSubscribe() {
 								/>
 							</div>
 						</div>
-						<div className={styles.sectionSubscribeTeacher}>
-							<h3 className={styles.sectionSubscribeSubtitleTeacher}>
-								Professor
-							</h3>
-							<p className={styles.sectionSubscribeRoleDescription}>
-								Como professor, você poderá enviar as redações de seus alunos
-								para que um ilustrador possa desenhar essas histórias,
-								incentivando seus alunos a ler e escrever ainda mais.
+						<div className={styles.sectionSubscribeRoleTeacher}>
+							<div className={styles.sectionSubscribeRoleHeader}>
+								<Image
+									className={styles.sectionSubscribeRoleImage}
+									src="/img/teacher.png"
+									alt="Minha Cena"
+									width={442}
+									height={150}
+								/>
+								<h3 className={styles.sectionSubscribeRoleSubtitle}>
+									Professor
+								</h3>
+							</div>
+							<p
+								className={`${styles.sectionSubscribeRoleDescription} ${styles.sectionSubscribeRoleDescriptionTeacher} `}
+							>
+								Como professor, você poderá enviar redações elaboradas por seus
+								alunos para que um ilustrador as desenhe, incentivando seus
+								alunos lerem e escrever ainda mais.
 							</p>
 							<div className={styles.sectionSubscribeRoleLink}>
 								<ButtonLink
-									label="Quero publicar redações de meus alunos"
+									label="Quero publicar essas redações"
 									href="/"
 									backgroundColor="#470FF4"
 									backgroundColorHover="#2D0999"

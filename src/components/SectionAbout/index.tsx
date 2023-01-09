@@ -57,8 +57,8 @@ export default function SectionAbout() {
 				<Image
 					className={styles.sectionAboutImage}
 					src="/img/about.png"
-					width={560}
-					height={560}
+					width={500}
+					height={500}
 					alt="Logo Minha Cena"
 				/>
 			</div>
