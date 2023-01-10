@@ -31,9 +31,9 @@ export default function SectionSubscribe() {
 							<p
 								className={`${styles.sectionSubscribeRoleDescription} ${styles.sectionSubscribeRoleDescriptionIllustrator} `}
 							>
-								Como professor, você poderá enviar redações elaboradas por seus
-								alunos para que um ilustrador as desenhe, incentivando seus
-								alunos lerem e escrever ainda mais.
+								Como ilustrador, você poderá contribuir adotando uma redação com
+								intuito de dar vida a essa história com ilustrações incríveis,
+								gerando também conteúdo para seu portfolio.
 							</p>
 							<div className={styles.sectionSubscribeRoleLink}>
 								<ButtonLink
