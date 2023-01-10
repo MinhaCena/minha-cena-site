@@ -136,19 +136,6 @@
 						padding: 0;
 						margin-top: 4.8rem;
 					}
-
-					.sectionMotivationGoalDescription_1{
-
-
-					}
-					.sectionMotivationGoalDescription_2{
-
-
-					}
-					.sectionMotivationGoalDescription_3{
-
-					}
-
 				}
 				.sectionMotivationGoal_1,
 				.sectionMotivationGoal_2,
@@ -162,6 +149,7 @@
 				.sectionMotivationGoal_1{
 					order: 2;
 					border-top: 8px solid $accent-ultramarine-1;
+					color: $accent-ultramarine-1;
 					&::before{
 						border-bottom: 2px solid $accent-ultramarine-1;
 					}
@@ -169,20 +157,20 @@
 						background: $accent-ultramarine-1;
 					}
 
-
 				}
 				.sectionMotivationGoal_2{
 					border-top: 8px solid $primary-byzantine-1;
+					color: $primary-byzantine-1 ;
 					&::before{
 						border-bottom: 2px solid $primary-byzantine-1;
 					}
 					&:hover::after{
 						background: $primary-byzantine-1;
 					}
-
 				}
 				.sectionMotivationGoal_3{
-					border-top: 8px solid #8B4EA8;;
+					border-top: 8px solid #8B4EA8;
+					color: #8B4EA8;
 					&::before{
 						border-bottom: 2px solid #8B4EA8;
 					}

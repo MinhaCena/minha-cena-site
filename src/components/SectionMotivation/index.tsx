@@ -42,9 +42,7 @@ export default function SectionMotivation() {
 								</h3>
 							</div>
 
-							<p
-								className={`${styles.sectionMotivationGoalDescription} ${styles.sectionMotivationGoalDescription_1}`}
-							>
+							<p className={styles.sectionMotivationGoalDescription}>
 								Melhorar a escrita, leitura e interpretação de texto dos alunos
 								de escolas públicas, privadas ou ONGs de contraturno escolar.
 							</p>
@@ -61,12 +59,10 @@ export default function SectionMotivation() {
 									alt="Icone de lâmpada representando idea"
 								/>
 								<h3 className={styles.sectionMotivationGoalSubtitle}>
-									Incentivo criativo
+									Incentivo a <br /> criatividade
 								</h3>
 							</div>
-							<p
-								className={`${styles.sectionMotivationGoalDescription} ${styles.sectionMotivationGoalDescription_2}`}
-							>
+							<p className={styles.sectionMotivationGoalDescription}>
 								Incentivar a cultura e produção de arte de nossos estudantes
 								através de ilustrações em história em quadrinhos (HQ).
 							</p>
@@ -87,9 +83,7 @@ export default function SectionMotivation() {
 								</h3>
 							</div>
 
-							<p
-								className={`${styles.sectionMotivationGoalDescription} ${styles.sectionMotivationGoalDescription_3}`}
-							>
+							<p className={styles.sectionMotivationGoalDescription}>
 								Trazer visibilidade aos artistas voluntários e dar suporte
 								pedagógico aos docentes em seus projetos educacionais.
 							</p>

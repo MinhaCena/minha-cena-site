@@ -102,16 +102,16 @@ export default function Footer() {
 								Equipe de Desenvolvimento
 							</strong>
 							<Link href="/" className={styles.footerTeamMember}>
-								Ana Laura | Front-end Developer
+								Ana Laura | Front-End Developer
 							</Link>
 							<Link href="/" className={styles.footerTeamMember}>
-								Adrian Oliveira | Front-end Developer
+								Adrian Oliveira | Front-End Developer
 							</Link>
 							<Link href="/" className={styles.footerTeamMember}>
-								Beny Allan | Back-end Developer
+								Beny Allan | Back-End Developer
 							</Link>
 							<Link href="/" className={styles.footerTeamMember}>
-								Fernando Carvalho | Back-end Developer
+								Fernando Carvalho | Back-End Developer
 							</Link>
 						</div>
 						<div className={styles.footerTeamColumn}>
