@@ -71,7 +71,7 @@
 
 				.footerUtils{
 					display: flex;
-					align-items: center;
+					align-items: baseline;
 					justify-content: space-between;
 
 					.footerUtilsType{
@@ -125,12 +125,10 @@
 					.footerLinks{
 						display: flex;
 						flex-direction: column;
-						justify-content: flex-end;
 						color: $gray-10;
 
 						a{
 							font-size: $text-sm;
-							align-self: flex-end;
 						}
 					}
 				}
