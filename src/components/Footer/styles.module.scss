@@ -94,16 +94,22 @@
 							display: flex;
 							column-gap: 1.6rem;
 							.instagram{
+								width: 24px;
+								height: 24px;
+								display: inline-flex;
+								align-items: center;
+								justify-content: center;
+								border-radius: 4px;
+								padding-right: 1px;
 								.instagramIcon{
 									width: 24px;
 									height: 24px;
 									//color: $accent-ultramarine-6;
 									color:$gray-10;
-									text-align: center;
+									}
 									&:hover{
 										background: $gradient-instagram;
 										border-radius: 4px;
-									}
 								}
 
 							}
