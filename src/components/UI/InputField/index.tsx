@@ -6,7 +6,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	label: string
 	width?: string
 	height?: string
+	marginInputGroup?: string
+	fontSizeInput?: string
 	fontSizeLabel?: string
+	fontColorLabel?: string
+	fontWeightLabel?: string
 }
 
 const InputField: FC<InputProps> = ({
@@ -14,20 +18,37 @@ const InputField: FC<InputProps> = ({
 	label,
 	width,
 	height,
+	marginInputGroup,
+	fontSizeInput,
 	fontSizeLabel,
+	fontColorLabel,
+	fontWeightLabel,
 	...rest
 }) => {
 	return (
-		<div className={styles.inputFieldGroup}>
+		<div
+			className={styles.inputFieldGroup}
+			style={{
+				marginTop: `${marginInputGroup}`,
+			}}
+		>
 			<label
-				style={{ fontSize: `${fontSizeLabel}rem` }}
+				style={{
+					fontSize: `${fontSizeLabel}rem`,
+					color: `${fontColorLabel}`,
+					fontWeight: `${fontWeightLabel}`,
+				}}
 				className={styles.inputFieldLabel}
 				htmlFor={name}
 			>
 				{label}
 			</label>
 			<input
-				style={{ width: `${width}rem`, height: `${height}rem` }}
+				style={{
+					width: `${width}rem`,
+					height: `${height}rem`,
+					fontSize: `${fontSizeInput}rem`,
+				}}
 				className={styles.inputFieldInput}
 				id={name}
 				{...rest}

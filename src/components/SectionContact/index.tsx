@@ -29,8 +29,8 @@ export default function SectionContact() {
 						id="question"
 						placeholder="Fale conosco enviando um e-mail com suas dúvidas. Estamos dispostos a respondê-las!"
 					/>
-					<button type="submit" className={styles.sectionContactSubmit}>
-						Enviar dúvida{' '}
+					<button type="submit" className={styles.sectionContactButtonSubmit}>
+						Enviar dúvida
 						<Image src="/icons/send.svg" width={24} height={24} alt="enviar" />
 					</button>
 				</div>
