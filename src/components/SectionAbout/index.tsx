@@ -13,19 +13,19 @@ export default function SectionAbout() {
 					</h2>
 					<p className={styles.sectionAboutInfo_1}>
 						Somos um projeto{' '}
-						<strong className={styles.titleAccent}>sem fins lucrativos</strong>{' '}
+						<strong className={styles.infoGradient}>sem fins lucrativos</strong>{' '}
 						e de{' '}
-						<strong className={styles.titleByzantine}>acesso gratuito</strong>.
+						<strong className={styles.infoGradient}>acesso gratuito</strong>.
 						Conectamos,{' '}
-						<strong className={styles.titleAccent}>
+						<strong className={styles.infoGradient}>
 							através de uma plataforma
 						</strong>
 						, profissionais da educação que{' '}
-						<strong className={styles.titleByzantine}>
+						<strong className={styles.infoGradient}>
 							enviam redações escritas por seus alunos
 						</strong>{' '}
 						à ilustradores voluntários que
-						<strong className={styles.titleAccent}>
+						<strong className={styles.infoGradient}>
 							{' '}
 							desenham essas histórias
 						</strong>{' '}
@@ -33,9 +33,9 @@ export default function SectionAbout() {
 					</p>
 					<p className={styles.sectionAboutInfo_2}>
 						Nossa metodologia é baseada em{' '}
-						<strong className={styles.titleByzantine}>gamificação</strong>,
-						unindo ensino híbrido e tecnologia tornando os{' '}
-						<strong className={styles.titleAccent}>
+						<strong className={styles.infoGradient}>gamificação</strong>, unindo
+						ensino híbrido e tecnologia tornando os{' '}
+						<strong className={styles.infoGradient}>
 							alunos protagonistas de seu aprendizado
 						</strong>
 						.
