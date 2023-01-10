@@ -41,7 +41,7 @@ export default function SectionPartners() {
 					/>
 					<Image
 						className={styles.sectionPartnerLogo}
-						src="/img/partners/colabora.svg"
+						src="/img/partners/colabora.png"
 						width={252}
 						height={76}
 						alt="Colabora"
