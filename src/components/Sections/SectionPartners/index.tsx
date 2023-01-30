@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export default function SectionPartners() {
 	return (
-		<section id="sobre-nos" className={styles.sectionPartners}>
+		<section id="parceiros" className={styles.sectionPartners}>
 			<div className={`${styles.sectionPartnersContent} container`}>
 				<h2 className={styles.sectionPartnersTitle}>
 					Parceiros que{' '}

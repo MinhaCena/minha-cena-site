@@ -1,11 +1,11 @@
 'use client'
-import ButtonLink from '../UI/ButtonLink'
-import InputField from '../UI/InputField'
+import ButtonLink from '../../ButtonLink'
+import InputField from '../../InputField'
 import styles from './styles.module.scss'
 
 export default function SectionRecommend() {
 	return (
-		<section id="proposta" className={styles.sectionRecommend}>
+		<section id="recomende" className={styles.sectionRecommend}>
 			<svg
 				viewBox="0 0 1366 170"
 				fill="none"

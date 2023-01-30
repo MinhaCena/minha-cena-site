@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
-import ButtonLink from '../UI/ButtonLink'
+import ButtonLink from '../../ButtonLink'
 import styles from './styles.module.scss'
 
 export default function SectionHero() {
 	return (
-		<section className={styles.sectionHero}>
+		<section id="apresentacao" className={styles.sectionHero}>
 			<div className={`${styles.sectionHeroContent} container`}>
 				<Image
 					className={styles.sectionHeroImage}

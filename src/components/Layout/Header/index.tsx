@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '../../../public/img/logo.svg'
+import logo from '../../../../public/img/logo.svg'
 import styles from './styles.module.scss'
 
 export default function Header() {
@@ -10,24 +10,24 @@ export default function Header() {
 			<div className={`${styles.headerContent} container`}>
 				<Image src={logo} alt="Minha Cena" width={170} />
 				<nav className={styles.headerNav}>
-					<Link className={styles.headerNavLink} href="/">
+					<a className={styles.headerNavLink} href="#apresentacao">
 						Home
-					</Link>
-					<Link className={styles.headerNavLink} href="#sobre-nos">
+					</a>
+					<a className={styles.headerNavLink} href="#sobre-nos">
 						Sobre Nós
-					</Link>
-					<Link className={styles.headerNavLink} href="#proposta">
+					</a>
+					<a className={styles.headerNavLink} href="#proposta">
 						Proposta
-					</Link>
-					<Link className={styles.headerNavLink} href="#como-fazer-parte">
+					</a>
+					<a className={styles.headerNavLink} href="#como-fazer-parte">
 						Como Fazer Parte?
-					</Link>
-					<Link className={styles.headerNavLink} href="#parceiros">
+					</a>
+					<a className={styles.headerNavLink} href="#parceiros">
 						Parceiros
-					</Link>
+					</a>
 				</nav>
 				<div className={styles.headerAction}>
-					<Link className={styles.headerActionSubscribe} href="/inscreva-se">
+					<Link className={styles.headerActionSubscribe} href="/">
 						Quero na minha escola
 						<svg
 							width="16"

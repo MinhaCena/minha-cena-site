@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { RxInstagramLogo, RxLinkedinLogo } from 'react-icons/rx'
-import InputField from '../UI/InputField'
+import InputField from '../../InputField'
 import styles from './styles.module.scss'
 
 export default function Footer() {

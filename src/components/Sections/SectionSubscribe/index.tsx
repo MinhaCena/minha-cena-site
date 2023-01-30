@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
-import ButtonLink from '../UI/ButtonLink'
+import ButtonLink from '../../ButtonLink'
 import styles from './styles.module.scss'
 
 export default function SectionSubscribe() {
 	return (
-		<section id="proposta" className={styles.sectionSubscribe}>
+		<section id="como-fazer-parte" className={styles.sectionSubscribe}>
 			<div className={`${styles.sectionSubscribeContent} container`}>
 				<h2 className={styles.sectionSubscribeTitle}>
 					Mas afinal,{' '}

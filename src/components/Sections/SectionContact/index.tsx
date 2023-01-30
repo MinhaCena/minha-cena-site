@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import InputField from '../UI/InputField'
+import InputField from '../../InputField'
 import styles from './styles.module.scss'
 
 export default function SectionContact() {
 	return (
-		<section id="proposta" className={styles.sectionContact}>
+		<section id="contato" className={styles.sectionContact}>
 			<div className={`${styles.sectionContactContent} container`}>
 				<h2 className={styles.sectionContactTitle}>
 					Ficou com alguma dúvida? Fala com a gente!

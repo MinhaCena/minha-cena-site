@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
 /* eslint-disable @next/next/no-page-custom-font */
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from '../components/Layout/Footer'
+import Header from '../components/Layout/Header'
 import '../styles/globals.scss'
 
 export default function RootLayout({
@@ -10,7 +10,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html>
+		<html lang="pt-br">
 			<head>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link
