@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	name: string
 	label: string
-	width?: string
+	maxWidth?: string
 	height?: string
 	marginInputGroup?: string
 	fontSizeInput?: string
@@ -16,7 +16,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const InputField: FC<InputProps> = ({
 	name,
 	label,
-	width,
+	maxWidth,
 	height,
 	marginInputGroup,
 	fontSizeInput,
@@ -30,6 +30,7 @@ const InputField: FC<InputProps> = ({
 			className={styles.inputFieldGroup}
 			style={{
 				marginTop: `${marginInputGroup}`,
+				maxWidth: `${maxWidth}rem`,
 			}}
 		>
 			<label
@@ -45,7 +46,7 @@ const InputField: FC<InputProps> = ({
 			</label>
 			<input
 				style={{
-					width: `${width}rem`,
+					maxWidth: `${maxWidth}rem`,
 					height: `${height}rem`,
 					fontSize: `${fontSizeInput}rem`,
 				}}

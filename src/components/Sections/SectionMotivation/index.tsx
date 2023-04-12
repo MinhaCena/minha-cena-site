@@ -31,7 +31,7 @@ export default function SectionMotivation() {
 						>
 							<div className={styles.sectionMotivationGoalHeader}>
 								<Image
-									className={styles.sectionHeroLogo}
+									className={styles.sectionMotivationIcon}
 									src="/icons/reading.svg"
 									width={60}
 									height={60}
@@ -52,14 +52,14 @@ export default function SectionMotivation() {
 						>
 							<div className={styles.sectionMotivationGoalHeader}>
 								<Image
-									className={styles.sectionHeroLogo}
+									className={styles.sectionMotivationIcon}
 									src="/icons/idea-color.svg"
 									width={60}
 									height={60}
 									alt="Icone de lâmpada representando idea"
 								/>
 								<h3 className={styles.sectionMotivationGoalSubtitle}>
-									Incentivo a <br /> criatividade
+									Incentivo a criatividade
 								</h3>
 							</div>
 							<p className={styles.sectionMotivationGoalDescription}>
@@ -72,7 +72,7 @@ export default function SectionMotivation() {
 						>
 							<div className={styles.sectionMotivationGoalHeader}>
 								<Image
-									className={styles.sectionHeroLogo}
+									className={styles.sectionMotivationIcon}
 									src="/icons/talking.svg"
 									width={60}
 									height={60}

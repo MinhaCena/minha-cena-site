@@ -43,6 +43,7 @@ export default function SectionRecommend() {
 						label="Email Institucional da Escola*"
 						type="text"
 						placeholder="Digite o email de sua escola"
+						marginInputGroup="2.4rem"
 					/>
 					<div className={styles.sectionRecommendFormAddress}>
 						<InputField
@@ -50,14 +51,15 @@ export default function SectionRecommend() {
 							label="Cidade*"
 							type="text"
 							placeholder="Digite a cidade de sua escola"
-							width="32"
+							marginInputGroup="2.4rem"
 						/>
 						<InputField
 							name="estado"
 							label="UF*"
 							type="text"
 							placeholder="UF"
-							width="6.4"
+							maxWidth="6.4"
+							marginInputGroup="2.4rem"
 						/>
 					</div>
 					<InputField
@@ -65,6 +67,7 @@ export default function SectionRecommend() {
 						label="Qual o nome de quem está indicando?"
 						type="text"
 						placeholder="Digite seu nome se sentir confortável"
+						marginInputGroup="2.4rem"
 					/>
 					<label
 						className={styles.sectionRecommendFormFunctionLabel}
@@ -92,7 +95,7 @@ export default function SectionRecommend() {
 					<ButtonLink
 						label="Indicar o projeto para minha escola!"
 						href="/"
-						width="40rem"
+						maxWidth="40rem"
 						backgroundColor="linear-gradient(131.35deg, #C46D7F -21.82%, #7551E3 124.67%)"
 						backgroundColorHover="linear-gradient(135deg, #662F5C 0%, #2D0999 100%)"
 					/>

@@ -1,68 +1,140 @@
-.sectionHero{
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+.sectionHero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
-	.sectionHeroContent{
-		width: 100%;
-		display: inline-flex;
+  .sectionHeroContent {
+    width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
 		align-items: center;
-		justify-content: space-between;
+		padding: 0 2.4rem;
 
-		.sectionHeroImage{
-			align-self: flex-end;
-			margin-top: 5.6rem;
+		@media (min-width: 768px){
+			flex-direction: row;
+			justify-content: center;
+			gap: 2.4rem;
+		}
+		@media(min-width: 1280px){
+			padding: 0;
+			gap: 0;
+			justify-content: space-between;
 		}
 
-		.sectionHeroDescription{
-			width: 53.6rem;
-			display: flex;
-			flex-direction: column;
-			margin-top: 7.2rem;
+    .sectionHeroImage {
+      margin-top: 5.6rem;
+			width: 100%;
+			height: 100%;
+			max-width: 500px;
+			max-height: 500px;
+    }
 
+    .sectionHeroDescription {
+			width: 100%;
+      max-width: 53.6rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5.6rem;
+			flex-grow: 2;
 
-			.sectionHeroTitle{
-				padding: 0;
-				margin: 0;
-				margin-top: 2.4rem;
-				width: 54rem;
-				font-size: $fs-h1-desktop;
-				line-height: 6.2rem;
-				font-weight: 700;
-				color: $secondary-xiketic-1;
+			.sectionHeroDescriptionHeading{
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: center;
 
-				.titleAccent{
-					color: $accent-ultramarine-1;
+				@media(min-width: 768px){
+					flex-direction: column;
 				}
-				.titleByzantine{
-					color: $primary-byzantine-1;
+				@media(min-width: 1280px){
+					align-items: flex-start;
 				}
+
+				.sectionHeroLogo{
+					display: none;
+					width: 200px;
+					height: 60px;
+					margin-top: 3.2rem;
+
+					@media(min-width: 768px){
+						display: flex;
+					}
+
+					@media(min-width: 1280px){
+						width: 420px;
+					}
+				}
+
+				.sectionHeroTitle {
+					padding: 0;
+					margin: 0;
+					width: 100%;
+					font-size: $fs-h1-mobile;
+					line-height: 3.8rem;
+					font-weight: 700;
+					text-align: center;
+					color: $secondary-xiketic-1;
+
+					@media(min-width: 768px){
+						margin-top: 2.4rem;
+					}
+					@media(min-width: 1280px){
+						font-size: $fs-h1-desktop;
+						line-height: 6.2rem;
+						text-align: left;
+					}
+
+					.titleAccent {
+						color: $accent-ultramarine-1;
+					}
+					.titleByzantine {
+						color: $primary-byzantine-1;
+					}
+				}
+
 			}
 
-			.sectionHeroInfo{
+			.sectionHeroInfoAction{
 				width: 100%;
-				padding: 0;
-				margin: 0;
-				margin-top: 1.6rem;
-				margin-bottom: 3.2rem;
-				font-size: $text-lg;
-				font-weight: 400;
-				line-height: 3rem;
-				color: $secondary-xiketic-2;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
 
-				.infoAccentUtramarine,
-				.infoAccentByzantine{
+				@media(min-width: 1280px){
+					justify-content: flex-start;
+					align-items: flex-start;
+				}
+				.sectionHeroInfo {
+					padding: 0;
+					margin: 0;
+					margin-top: 3.2rem;
+					margin-bottom: 3.2rem;
+					font-size: $text-lg;
 					font-weight: 400;
-				}
+					line-height: 3rem;
+					text-align: center;
+					color: $secondary-xiketic-2;
 
-				.infoAccentUtramarine{
-					color: $accent-ultramarine-1;
-				}
-				.infoAccentByzantine{
-					color: $primary-byzantine-1;
+					@media(min-width: 1280px){
+						text-align: left;
+
+					}
+
+					.infoAccentUtramarine,
+					.infoAccentByzantine {
+						font-weight: 600;
+					}
+
+					.infoAccentUtramarine {
+						color: $accent-ultramarine-1;
+					}
+					.infoAccentByzantine {
+						color: $primary-byzantine-1;
+					}
 				}
 
 			}
-		}
-	}
+
+    }
+  }
 }

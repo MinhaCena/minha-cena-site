@@ -3,49 +3,59 @@
 	align-items: center;
 	justify-content: center;
 	height: 100;
-	margin-top: 16rem;
+	//margin-top: 16rem;
+	padding-top: 5.6rem;
 
 	.sectionAboutContent{
 		width: 100%;
 		height: 100%;
+		padding: 0 2.4rem;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+		@media(min-width: 768px){
+			flex-direction: row;
+			justify-content: center;
+			gap: 2.4rem;
+		}
+		@media(min-width: 1280px){
+			padding: 0;
+			gap: 0;
+			justify-content: space-between;
+		}
 
 		.sectionAboutDescription{
-			width: 612px;
+			width: 100%;
+			height: 100%;
+			max-width: 612px;
 			height: 648px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			background: no-repeat url("../../../../public/img/background-about.svg");
-			background-position: center;
+			flex-grow: 2;
+			@media(min-width: 1280px){
+				background: no-repeat url("../../../../public/img/background-about.svg");
+				background-position: center;
+			}
 
 			.sectionAboutTitle{
-				width: 48rem;
+				width: 100%;
 				margin: 0;
-				position: relative;
-				font-size: $fs-h2-desktop;
+				font-size: $fs-h2-mobile;
 				font-weight: 800;
-				padding-bottom: 1.6rem;
+				text-align: center;
 				color: $secondary-xiketic-1;
+				@media(min-width: 1280px){
+					font-size: $fs-h1-desktop;
+					text-align: left;
+				}
 
 				.titleByzantine{
 					color: $primary-byzantine-1;
 					font-weight: 800;
 				}
-
-		/* 		&::after{
-					content: "";
-					width: 9.2rem;
-					margin-right: 0.4rem;
-					border-bottom: 2px solid $primary-byzantine-0;
-					position: absolute;
-					top: 0;
-         	right: 0;
-					bottom: 0;
-				} */
 			}
 
 			.sectionAboutInfo_1,
@@ -73,10 +83,12 @@
 
 			.sectionAboutGreeting{
 				font-size: $fs-subtitle2-desktop;
+				text-align: center;
 				font-weight: 800;
 				color: $secondary-xiketic-2;
 				margin-top: 1.6rem;
 				margin-bottom: 3.2rem;
+				line-height: 4rem;
 
 				.sectionAboutGreetingGradient{
 					font-weight: 800;
@@ -86,6 +98,14 @@
 				}
 			}
 
+		}
+
+		.sectionAboutImage{
+			width: 100%;
+			height: 100%;
+			max-width: 500px;
+			max-height: 500px;
+			margin-top: 3.2rem;
 		}
 	}
 }

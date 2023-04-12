@@ -1,164 +1,291 @@
 .header{
-  width: 100%;
-  height: 88px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0 2.4rem;
-	position: sticky;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	position:	sticky;
 	top: 0;
+	left: 0;
+	z-index: 3;
 	background: $gray-12;
 	border-bottom: 1px solid $primary-byzantine-6;
-	z-index: 3;
-
-  @media (min-width: 1440px) {
-    padding: 0;
-  }
+	-webkit-backface-visibility: hidden;
 
   .headerContent{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+		width: 100%;
+		display: flex;
+		padding: 0 2.4rem;
+		justify-content: space-between;
+		align-items: center;
 
-    .headerNav{
-			height: 88px;
-      display: flex;
+		@media (min-width: 1280px) {
+			flex-direction: row;
 			align-items: center;
-			justify-content: center;
-      .headerNavLink{
-        display: inline-flex;
-				align-items: center;
-				height: 88px;
-				padding: 0 2.4rem;
-        font-size: $fs-btn-link-m;
-				color: $secondary-xiketic-2;
-        font-weight: 600;
-        position: relative;
-				&::after{
-					content: "";
-					width: 100%;
-					height: 0;
-					position: absolute;
-					top: 0;
-					left: 0;
-					background: $gradient-7;
-					opacity: 0;
-					transition: 550ms ease-in-out;
-					z-index: -1;
-				}
-				&:hover::after{
-				  opacity: 1;
-    			height: 100%;
-    			background: $gradient-7;
-				}
+		}
+		@media(min-width: 1280px){
+			padding: 0
+		}
 
-      /*&::after{
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
-        &:hover::after{
-          border-bottom: 3px solid $primary-byzantine-2;
-
-        } */
-      }
-    }
-
-    .headerAction{
+		.headerLeft{
 			display: flex;
+			width: 100%;
+			align-items: center;
 
-			.headerActionSubscribe{
-				width: 25.6rem;
-				height: 4.8rem;
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				position: relative;
-				border-radius: 8px;
-				font-size: $fs-btn-link-m;
-				font-weight: 600;
-				color: $accent-ultramarine-1;
-				border: 2px solid $accent-ultramarine-1;
-				svg{
-					fill: $accent-ultramarine-1;
-					margin-left: 4px;
-				}
+			.headerLeftContent{
+				width: 100%;
+				display: none;
 
-				&:hover{
-					color: $gray-12;
-					svg{
-						fill: $gray-12;
+				@media (min-width: 1024px) {
+					display: flex;
+					justify-content: space-between;
+			 }
+				.headerNav{
+					height: 80px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-left: 1.6rem;
+					margin-right: 1.6rem;
+
+					@media(min-width: 1280px){
+						margin-left: 6.4rem;
+						margin-right: 2.4rem;
+					}
+
+					.headerNavLink{
+						display: inline-flex;
+						height: 100%;
+						align-items: center;
+						padding: 0 0.8rem;
+						font-size: $fs-btn-link-s;
+						color: $secondary-xiketic-2;
+						font-weight: 600;
+						position: relative;
+
+						@media(min-width: 1280px){
+							padding: 0 1.6rem;
+						}
+						&::after{
+							content: "";
+							width: 100%;
+							height: 0;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: $gradient-7;
+							opacity: 0;
+							transition: 0.8s ease-in-out;
+							z-index: -1;
+						}
+						&:hover::after{
+							opacity: 1;
+							height: 100%;
+							background: $gradient-7;
+						}
+						&:active::after{
+							opacity: 1;
+							height: 100%;
+							background: $gradient-7;
+						}
+
+						@media(min-width: 1280px){
+							font-size: $fs-btn-link-m;
+						}
 					}
 				}
-				&::after{
-					content: "";
-					width: 100%;
-					height: 0;
-					position: absolute;
-					top: 0;
-					left: 0;
-					background: $gray-12;
-					transition: 550ms ease-in-out;
-					z-index: -1;
 
-				}
-				&:hover::after{
-				  opacity: 1;
-    			height: 100%;
-    			background: $accent-ultramarine-1;
+				.headerAction{
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					gap: 1.6rem;
+					flex-grow: 2;
+					font-size: $fs-btn-link-s;
+					font-weight: 600;
+
+					@media( min-width: 1280px){
+						font-size: $fs-btn-link-m;
+					}
+
+					.headerActionSubscribe{
+						width: 100%;
+						max-width: 25.6rem;
+						height: 4.8rem;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						position: relative;
+						border-radius: 8px;
+						color: $accent-ultramarine-1;
+						border: 2px solid $accent-ultramarine-1;
+						svg{
+							fill: $accent-ultramarine-1;
+							margin-left: 4px;
+						}
+
+						&:hover{
+							color: $gray-12;
+							svg{
+								fill: $gray-12;
+							}
+						}
+						&::after{
+							content: "";
+							width: 100%;
+							height: 0;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: $gray-12;
+							transition: 550ms ease-in-out;
+							z-index: -1;
+
+						}
+						&:hover::after{
+							opacity: 1;
+							height: 100%;
+							background: $accent-ultramarine-1;
+						}
+						&:active::after{
+							opacity: 1;
+							height: 100%;
+							background: $accent-ultramarine-1;
+
+						}
+
+					}
+
+					.headerActionLogin{
+						width: 100%;
+						max-width: 12.8rem;
+						height: 4.8rem;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						position: relative;
+						border-radius: 8px;
+						color: $primary-byzantine-1;
+						border: 2px solid $primary-byzantine-1;
+						svg{
+							fill: $primary-byzantine-1;
+							margin-left: 4px;
+						}
+
+						&:hover{
+							color: $gray-12;
+							svg{
+								fill: $gray-12;
+							}
+						}
+						&::after{
+							content: "";
+							width: 100%;
+							height: 0;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: $gray-12;
+							transition: 550ms ease-in-out;
+							z-index: -1;
+
+						}
+						&:hover::after{
+							opacity: 1;
+							height: 100%;
+							background: $primary-byzantine-1;
+						}
+
+						&:active::after{
+							opacity: 1;
+							height: 100%;
+							background: $primary-byzantine-1;
+						}
+
+					}
 				}
 
 			}
 
-			.headerActionLogin{
-				width: 12.8rem;
-				height: 4.8rem;
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				margin-left: 1.6rem;
-				position: relative;
-				border-radius: 8px;
-				font-size: $fs-btn-link-m;
-				font-weight: 600;
-				color: $primary-byzantine-1;
-				border: 2px solid $primary-byzantine-1;
-				svg{
-					fill: $primary-byzantine-1;
-					margin-left: 4px;
+			.headerLeftContentShow{
+				position: static;
+				height: 100%;
+				display: flex;
+
+				@media (max-width: 1023px) {
+					position: absolute;
+					left: 0px;
+					top: 80px;
+					height: calc(100vh - 80px);
+					display: flex;
+					padding: 2.4rem 0;
+					flex-direction: column;
+					overflow-y: auto;
+					padding-bottom: 5.6rem;
+					-webkit-backface-visibility: hidden;
+					background: $gray-12;
+					z-index: 0;
 				}
 
-				&:hover{
-					color: $gray-12;
-					svg{
-						fill: $gray-12;
+				.headerNav{
+					padding: 0;
+					height: auto;
+					margin: 0;
+
+					@media (max-width: 1023px){
+						flex-direction: column;
+					}
+					.headerNavLink{
+						display: flex;
+						flex-direction: row;
+						padding: 2.4rem 0;
+
 					}
 				}
-				&::after{
-					content: "";
+				.headerAction{
 					width: 100%;
-					height: 0;
-					position: absolute;
-					top: 0;
-					left: 0;
-					background: $gray-12;
-					transition: 550ms ease-in-out;
-					z-index: -1;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					margin-top: 2.4rem;
+					gap: 3.2rem;
 
-				}
-				&:hover::after{
-				  opacity: 1;
-    			height: 100%;
-    			background: $primary-byzantine-1;
+					@media (min-width: 768px){
+						margin: 0;
+						flex-direction: row;
+					}
 				}
 
 			}
-    }
+
+		}
+
+		.headerRight{
+			display: flex;
+			justify-content: flex-end;
+
+			.headerNavToggle{
+				order: 2;
+				width: 32px;
+				height: 32px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: none;
+				background: transparent;
+
+				.headerNavToggleIcon{
+					width: 40px;
+					height: 40px;
+				}
+
+				svg{
+					color: greens;
+				}
+				@media (min-width: 1024px) {
+					display: none;
+			 }
+			}
+		}
   }
 }
 

@@ -19,6 +19,7 @@ export default function Footer() {
 								alt="Logo Minha Cena"
 							/>
 							<Image
+								className={styles.footerLogoFooter}
 								src="/img/logo-footer.svg"
 								width={252}
 								height={36}
@@ -98,6 +99,17 @@ export default function Footer() {
 							>
 								Eliezer Manoel
 							</Link>
+						</div>
+						<div className={styles.footerTeamColumn}>
+							<strong className={styles.footerTeamRole}>Scrum Master</strong>
+							<Link
+								href="/"
+								className={`${styles.footerTeamMember} ${styles.footerTeamMemberName}`}
+							>
+								Rejane Escolano
+							</Link>
+						</div>
+						<div className={styles.footerTeamColumn}>
 							<strong className={styles.footerTeamRole}>
 								Equipe de Desenvolvimento
 							</strong>
@@ -106,6 +118,12 @@ export default function Footer() {
 							</Link>
 							<Link href="/" className={styles.footerTeamMember}>
 								Adrian Oliveira | Front-End Developer
+							</Link>
+							<Link href="/" className={styles.footerTeamMember}>
+								Maísa Fernanda | Back-End Developer
+							</Link>
+							<Link href="/" className={styles.footerTeamMember}>
+								Thais Minas | Back-End Developer
 							</Link>
 							<Link href="/" className={styles.footerTeamMember}>
 								Beny Allan | Back-End Developer

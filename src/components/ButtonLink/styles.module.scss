@@ -1,15 +1,24 @@
 .buttonLink{
 	width: 100%;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	font-weight: 600;
+	padding: 2.4rem;
 	height: 4.8rem;
-	font-size: $fs-btn-link-m;
+	font-size: $fs-btn-link-s;
 	letter-spacing: 1px;
 	color: $gray-12;
 	border-radius: 8px;
 	background: $primary-byzantine-1;
+	@media(min-width: 1024px){
+		font-size: $fs-btn-link-m;
+	}
+	@media(min-width: 412px){
+		padding: 0;
+	}
+
 
 	svg{
 		fill: $gray-12;
