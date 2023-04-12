@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 interface IButtonLink {
 	href: string
 	label: string
-	width?: string
+	maxWidth?: string
 	backgroundColor?: string
 	backgroundColorHover: string
 	fontColor?: string
@@ -14,7 +14,7 @@ interface IButtonLink {
 export default function ButtonLink({
 	href,
 	label,
-	width,
+	maxWidth,
 	backgroundColor,
 	backgroundColorHover,
 	fontColor,
@@ -30,7 +30,8 @@ export default function ButtonLink({
 	}
 
 	const buttonStyle = {
-		width: `${width}`,
+		width: '100%',
+		maxWidth: `${maxWidth}`,
 		background: isHover ? `${backgroundColorHover}` : `${backgroundColor}`,
 		color: `${fontColor}`,
 	}

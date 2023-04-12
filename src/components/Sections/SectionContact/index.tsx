@@ -16,7 +16,7 @@ export default function SectionContact() {
 					label="Seu e-mail*"
 					type="email"
 					placeholder="Digite seu e-mail"
-					width="60.8"
+					maxWidth="60.8"
 					height="4.2"
 					fontSizeLabel="2.4"
 				/>

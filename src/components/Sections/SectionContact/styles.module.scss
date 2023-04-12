@@ -4,27 +4,39 @@
 	align-items: center;
 	flex-direction: column;
 	margin-top: 10rem;
+
 	.sectionContactContent{
+		padding: 0 2.4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		.sectionContactTitle{
-			font-size: $fs-h2-desktop;
+			font-size: $fs-h2-mobile;
+			text-align: center;
 			color: $secondary-xiketic-2;
 			font-weight: 800;
 			margin: 0;
+
+			@media(min-width: 1280px){
+				font-size: $fs-h2-desktop;
+			}
 		}
 	}
 
 	.sectionContactForm{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 6.4rem 0;
 		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 6.4rem 2.4rem;
 		background-image: url('../../../../public/shapes/blob-contact.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 
 		.sectionContactFormTextArea{
-			width: 60.8rem;
+			width: 100%;
+			max-width: 60.8rem;
 			display: flex;
 			flex-direction: column;
 			margin-top: 1.6rem;
