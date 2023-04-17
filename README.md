@@ -46,4 +46,4 @@ Atualmente o deploy do projeto está sendo feito na plataforma [Vercel](https://
 
 Contribuições são sempre bem-vindas!
 
-Veja `CONTRIBUTING.md` para saber como começar.
+Veja [CONTRIBUTING.md](https://github.com/MinhaCena/minha-cena-site/blob/develop/CONTRIBUTING.md) para saber como começar.
