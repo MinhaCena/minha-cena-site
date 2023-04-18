@@ -7,13 +7,15 @@ export default function SectionHero() {
 	return (
 		<section id="apresentacao" className={styles.sectionHero}>
 			<div className={`${styles.sectionHeroContent} container`}>
-				<Image
-					className={styles.sectionHeroImage}
-					src="/img/hero.png"
-					width={500}
-					height={500}
-					alt="Logo Minha Cena"
-				/>
+				<div className={styles.sectionHeroAnimation}>
+					<Image
+						className={styles.sectionHeroImage}
+						src="/img/hero.png"
+						width={500}
+						height={500}
+						alt="Logo Minha Cena"
+					/>
+				</div>
 				<div className={styles.sectionHeroDescription}>
 					<div className={styles.sectionHeroDescriptionHeading}>
 						<Image
