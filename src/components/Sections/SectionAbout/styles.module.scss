@@ -106,15 +106,14 @@
 			margin-top: 3.2rem;
 			animation: floatUpDown 2.5s infinite;
 			animation-delay: 1.5s;
-		}
 
-		.sectionAboutImage {
-			width: 100%;
-			height: 100%;
-			max-width: 500px;
-			max-height: 500px;
-			animation: circularFade ease-out 3s forwards;
-
+			.sectionAboutImage {
+				width: 100%;
+				height: 100%;
+				max-width: 500px;
+				max-height: 500px;
+				animation: circularFade ease-out 3s forwards;
+			}
 		}
 	}
 }
