@@ -1,4 +1,4 @@
-.sectionAbout{
+.sectionAbout {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -6,7 +6,7 @@
 	//margin-top: 16rem;
 	padding-top: 5.6rem;
 
-	.sectionAboutContent{
+	.sectionAboutContent {
 		width: 100%;
 		height: 100%;
 		padding: 0 2.4rem;
@@ -14,18 +14,18 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		@media(min-width: 768px){
+		@media (min-width: 768px) {
 			flex-direction: row;
 			justify-content: center;
 			gap: 2.4rem;
 		}
-		@media(min-width: 1280px){
+		@media (min-width: 1280px) {
 			padding: 0;
 			gap: 0;
 			justify-content: space-between;
 		}
 
-		.sectionAboutDescription{
+		.sectionAboutDescription {
 			width: 100%;
 			height: 100%;
 			max-width: 612px;
@@ -35,31 +35,31 @@
 			align-items: center;
 			justify-content: center;
 			flex-grow: 2;
-			@media(min-width: 1280px){
-				background: no-repeat url("../../../../public/img/background-about.svg");
+			@media (min-width: 1280px) {
+				background: no-repeat url('../../../../public/img/background-about.svg');
 				background-position: center;
 			}
 
-			.sectionAboutTitle{
+			.sectionAboutTitle {
 				width: 100%;
 				margin: 0;
 				font-size: $fs-h2-mobile;
 				font-weight: 800;
 				text-align: center;
 				color: $secondary-xiketic-1;
-				@media(min-width: 1280px){
+				@media (min-width: 1280px) {
 					font-size: $fs-h1-desktop;
 					text-align: left;
 				}
 
-				.titleByzantine{
+				.titleByzantine {
 					color: $primary-byzantine-1;
 					font-weight: 800;
 				}
 			}
 
 			.sectionAboutInfo_1,
-			.sectionAboutInfo_2{
+			.sectionAboutInfo_2 {
 				font-size: $text-lg;
 				color: $secondary-xiketic-2;
 				margin: 0;
@@ -67,21 +67,20 @@
 				line-height: 2.6rem;
 			}
 
-			.sectionAboutInfo_1{
+			.sectionAboutInfo_1 {
 				margin-top: 2.4rem;
 			}
-			.sectionAboutInfo_2{
+			.sectionAboutInfo_2 {
 				margin-top: 1.6rem;
 			}
-			.infoGradient{
+			.infoGradient {
 				font-weight: 700;
 				background: $gradient-1;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 			}
 
-
-			.sectionAboutGreeting{
+			.sectionAboutGreeting {
 				font-size: $fs-subtitle2-desktop;
 				text-align: center;
 				font-weight: 800;
@@ -90,22 +89,54 @@
 				margin-bottom: 3.2rem;
 				line-height: 4rem;
 
-				.sectionAboutGreetingGradient{
+				.sectionAboutGreetingGradient {
 					font-weight: 800;
 					background: $gradient-1;
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 				}
 			}
-
 		}
 
-		.sectionAboutImage{
+		.sectionAboutAnimation {
 			width: 100%;
 			height: 100%;
 			max-width: 500px;
 			max-height: 500px;
 			margin-top: 3.2rem;
+			animation: floatUpDown 2.5s infinite;
+			animation-delay: 1.5s;
+
+			.sectionAboutImage {
+				width: 100%;
+				height: 100%;
+				max-width: 500px;
+				max-height: 500px;
+				animation: circularFade ease-out 3s forwards;
+			}
 		}
+	}
+}
+
+@keyframes circularFade {
+	from {
+		clip-path: circle(0);
+		opacity: 0.7;
+	}
+	to {
+		clip-path: circle(100%);
+		opacity: 1;
+	}
+}
+
+@keyframes floatUpDown {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(25px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }

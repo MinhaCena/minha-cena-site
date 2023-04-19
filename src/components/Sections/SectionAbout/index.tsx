@@ -54,13 +54,15 @@ export default function SectionAbout() {
 						backgroundColorHover="linear-gradient(135deg, #662F5C 0%, #2D0999 100%)"
 					/>
 				</div>
-				<Image
-					className={styles.sectionAboutImage}
-					src="/img/about.png"
-					width={500}
-					height={500}
-					alt="Logo Minha Cena"
-				/>
+				<div className={styles.sectionAboutAnimation}>
+					<Image
+						className={styles.sectionAboutImage}
+						src="/img/about.png"
+						width={500}
+						height={500}
+						alt="Logo Minha Cena"
+					/>
+				</div>
 			</div>
 		</section>
 	)
