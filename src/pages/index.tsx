@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 import { LottieAnimation } from '../components/LottieAnimation'
 //import Blob from '../../public/shapes/blob.svg'
 
@@ -8,6 +10,7 @@ import styles from '../styles/pages/home.module.scss'
 const Home: NextPage = () => {
 	return (
 		<div className={styles.home}>
+			<Header />
 			<LottieAnimation />
 			{/* 	<svg
 				viewBox="0 0 1312 170"
@@ -25,5 +28,4 @@ const Home: NextPage = () => {
 		</div>
 	)
 }
-
 export default Home
