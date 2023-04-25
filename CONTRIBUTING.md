@@ -108,9 +108,9 @@ BREAKING CHANGES: the form no longer supports CEP list.
 
 ## Fluxo de Desenvolvimento
 
-* Clone ou faça um fork do repositório
+* Clone o repositório
 * Crie ou assine uma **issue** existente
-* Crie a partir da branch develop uma branch com o tipo da issue (ex. feat, refector, fix, chore) e um nome que faça referência a issue, exemplo:
+* Crie a partir da **branch develop** uma branch do tipo **feat** e um nome que faça referência a issue, exemplo:
 
 	para a **issue #22 - Add Terms of Use page**
 
