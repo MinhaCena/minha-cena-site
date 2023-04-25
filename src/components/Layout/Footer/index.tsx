@@ -162,18 +162,14 @@ export default function Footer() {
 					<span className={styles.footerCopyright}>
 						MinhaCena.org © 2023 <br /> Todos os direitos reservados.
 					</span>
-					<button
-						className={styles.footerButtonUp}
-						type="button"
-						aria-label="Subir até o topo da página"
-					>
+					<Link className={styles.footerLinkUp} href="/">
 						<Image
 							src="/icons/arrow-up.svg"
 							width={16}
 							height={16}
 							alt="enviar"
 						/>
-					</button>
+					</Link>
 				</div>
 			</div>
 		</footer>

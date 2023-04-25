@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 /* eslint-disable @next/next/no-page-custom-font */
-import Footer from '../components/Layout/Footer'
-import Header from '../components/Layout/Header'
+
 import '../styles/globals.scss'
 
 export default function RootLayout({
@@ -31,9 +30,7 @@ export default function RootLayout({
 				<title>Minha Cena</title>
 			</head>
 			<body>
-				<Header />
 				<div>{children}</div>
-				<Footer />
 			</body>
 		</html>
 	)

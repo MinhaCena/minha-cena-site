@@ -254,7 +254,7 @@
 				font-size: $text-xsm;
 			}
 
-			.footerButtonUp{
+			.footerLinkUp{
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -262,6 +262,7 @@
 				height: 40px;
 				border: none;
 				border-radius: 12px;
+				background-color: $gray-12;
 			}
 		}
 
