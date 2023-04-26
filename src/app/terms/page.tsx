@@ -1,12 +1,23 @@
+import Image from 'next/image'
 import styles from './styles.module.scss'
 
 export default function Page() {
 	return (
 		<>
 			<header className={styles.navbar}>
-				<img src="http://localhost:3000/img/terms/Vector.png" alt="logo" />
+				<Image
+					src={'/img/terms/Vector.png'}
+					alt="logo"
+					width={170}
+					height={24}
+				/>
 				<form className={styles.search_box}>
-					<img src="http://localhost:3000/img/terms/tabler_search.png" />
+					<Image
+						src={'/img/terms/tabler_search.png'}
+						width={16}
+						height={16}
+						alt="icone de busca"
+					/>
 					<input
 						className={styles.search}
 						type="search"
@@ -17,22 +28,27 @@ export default function Page() {
 
 			<aside className={styles.sidebar}>
 				<ul className={styles.sidebar_box}>
+					{/* colocar dentro de uma <li></li> */}
 					<img
 						className={styles.sidebar_icon}
 						src="http://localhost:3000/img/terms/arrow.png"
 					/>
-					<a className={styles.sidebar_item} href="#">
+					<a className={styles.sidebar_item} href="#values">
 						NOSSOS VALORES
 					</a>
+					{/*  */}
 
+					{/* colocar dentro de uma <li></li> */}
 					<img
 						className={styles.sidebar_icon}
 						src="http://localhost:3000/img/terms/arrow.png"
 					/>
 					<a className={styles.sidebar_item} href="#">
-						GRADUATE
+						GRATUIDADE
 					</a>
+					{/*  */}
 
+					{/* colocar dentro de uma <li></li> */}
 					<img
 						className={styles.sidebar_icon}
 						src="http://localhost:3000/img/terms/arrow.png"
@@ -40,7 +56,9 @@ export default function Page() {
 					<a className={styles.sidebar_item} href="#">
 						PERFIS
 					</a>
+					{/*  */}
 
+					{/* colocar dentro de uma <li></li> */}
 					<img
 						className={styles.sidebar_icon}
 						src="http://localhost:3000/img/terms/arrow.png"
@@ -48,6 +66,7 @@ export default function Page() {
 					<a className={styles.sidebar_item} href="#">
 						LGPD
 					</a>
+					{/*  */}
 				</ul>
 			</aside>
 
@@ -69,7 +88,9 @@ export default function Page() {
 						aluno protagonista no seu aprendizado.
 					</div>
 
-					<h2 className={styles.title}>1. Nossos valores:</h2>
+					<h2 className={styles.title} id="values">
+						1. Nossos valores:
+					</h2>
 
 					<div className={styles.content_text}>
 						<p>
@@ -185,6 +206,8 @@ export default function Page() {
 							que completarem o cadastro com as seguintes informações:
 							<br />
 						</p>
+						{/* colocar todos os items dentro de uma única <ul></ul> e
+						cada item dentro de uma <li></li> */}
 						<ul>• Portfólio</ul>
 						<ul>• Qual o público atendido;</ul>
 						<ul>• Informações para contato;</ul>
@@ -192,6 +215,7 @@ export default function Page() {
 							• Qual a disponibilidade que os(as) voluntários(as) devem ter para
 							a ação.
 						</ul>
+						{/*  */}
 						<p>
 							Destacamos que não serão publicadas ilustrações: (i) com viés ou
 							ligadas a movimentos políticos, (ii) que tenham a finalidade de
@@ -215,13 +239,18 @@ export default function Page() {
 							3.2.1. Informações relevantes para inserção da escola na
 							plataforma;
 						</h4>
+						{/* colocar todos os items dentro de uma única <ul></ul> e
+						cada item dentro de uma <li></li> */}
 						<ul>• Se o segmento é público, privada ou ONG;</ul>
 						<ul>• Qual a importância dessa atividade na escola;</ul>
 						<ul>• Dados dos Professores voluntários responsáveis pelo login</ul>
+						{/*  */}
 						<h4>
 							3.2.2. Regras gerais para aprovação;
 							<br />
 						</h4>
+						{/* colocar todos os items dentro de uma única <ul></ul> e
+						cada item dentro de uma <li></li> */}
 						<ul>
 							• Não aprovamos no site, perfis de escolas, professores ou
 							ilustradores que tenham finalidade de evangelização, mesmo que
@@ -232,6 +261,7 @@ export default function Page() {
 							ilustradores aprovados, que reiteradamente, deixam de responder as
 							redações publicadas na dashboard pelos professores.
 						</ul>
+						{/*  */}
 						<h4>
 							3.2.3. Sobre direitos autorais;
 							<br />
@@ -268,14 +298,15 @@ export default function Page() {
 							pessoas físicas e empresas, públicas e privadas, ratificamos os
 							dados que serão tratados através da nossa plataforma:
 						</p>
-
+						{/* colocar todos os items dentro de uma única <ul></ul> e
+						cada item dentro de uma <li></li> */}
 						<ul>
 							• Dados pessoais: nome, e-mail, telefone, data de nascimento,
 							gênero;
 						</ul>
 						<ul>• Causas de interesse;</ul>
 						<ul>• Habilidades pessoais;</ul>
-
+						{/*  */}
 						<p>
 							Todos os dados disponibilizados pelos usuários no momento do
 							cadastro no nosso site, mediante expressa autorização, serão
