@@ -1,6 +1,6 @@
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
-export default function Page(){
+export default function page(){
     return(
         <>
             <header className={styles.navbar}>
@@ -103,7 +103,7 @@ export default function Page(){
                         
                         <p>• Orientar pais de alunos sobre o voluntariado das atividades na plataforma;</p>
                         
-                        <h3><p>2.3. Responsabilidades ilustradores voluntários(as):</p></h3>
+                        <b><h3>2.3. Responsabilidades ilustradores voluntários(as):</h3></b>
                         
                         • Manter os dados de contato atualizados;<br/>
                         • Responder, ilustrar e ser comprometido no trabalho voluntário;<br/>
@@ -115,7 +115,7 @@ export default function Page(){
                     <div className={styles.content_text}>Conforme informado acima, todos os perfis e vagas de voluntariado no site 
                         passam por aprovação prévia, e observamos os seguintes critérios:
                         <br/>
-                        <h3><p>3.1. Perfis dos Ilustradores:<br/></p></h3>
+                        <b><h3>3.1. Perfis dos Ilustradores:<br/></h3></b>
                         
                         <p>Nossa plataforma é aberta para que ilustradores profissionais ou estudantes da área, 
                         mostrem seu trabalho disponibilizado de forma gratuita e voluntaria para propósito social e pedagógico. 
