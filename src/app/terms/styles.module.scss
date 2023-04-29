@@ -71,7 +71,7 @@
 
 .sidebar_icon{
     display: inline-flex;
-    padding-left: 3em;
+    margin-left: 4em;
 }
 
 .content{
@@ -111,6 +111,10 @@
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 1em;
+}
+
+.content_list{
+    margin-left: 3em;
 }
 
 .content_text_value{

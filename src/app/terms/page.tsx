@@ -1,12 +1,13 @@
+import Image from 'next/image'
 import styles from './styles.module.scss'
 
 export default function Page(){
     return(
         <>
             <header className={styles.navbar}>
-                <img src="http://localhost:3000/img/terms/Vector.png" alt='logo'/>
+                <Image src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
                 <form className={styles.search_box}>
-                    <img src="http://localhost:3000/img/terms/tabler_search.png"/>
+                    <Image src="/img/terms/tabler_search.png" width={10.37} height={10.37} alt='search' />
                     <input className={styles.search} type="search" placeholder="Pesquise dentro do termo..."/>
                 </form>
             </header>
@@ -14,17 +15,17 @@ export default function Page(){
             <aside className={styles.sidebar}>
 
                 <ul className={styles.sidebar_box}>
-                    <img className={styles.sidebar_icon} src="http://localhost:3000/img/terms/arrow.png"/>
-                    <a className={styles.sidebar_item} href="#">NOSSOS VALORES</a>
+                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <a className={styles.sidebar_item} href="#NossosValores">NOSSOS VALORES</a>
 
-                    <img className={styles.sidebar_icon} src="http://localhost:3000/img/terms/arrow.png"/>
-                    <a className={styles.sidebar_item} href="#">GRADUATE</a>
+                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <a className={styles.sidebar_item} href="#Gratuidade">GRADUATE</a>
 
-                    <img className={styles.sidebar_icon} src="http://localhost:3000/img/terms/arrow.png"/>
-                    <a className={styles.sidebar_item} href="#">PERFIS</a>
+                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <a className={styles.sidebar_item} href="#Perfis">PERFIS</a>
 
-                    <img className={styles.sidebar_icon} src="http://localhost:3000/img/terms/arrow.png"/>
-                    <a className={styles.sidebar_item} href="#">LGPD</a>
+                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <a className={styles.sidebar_item} href="#LGPD">LGPD</a>
                 </ul>
             </aside>
 
@@ -50,7 +51,7 @@ export default function Page(){
                         tornando o aluno protagonista no seu aprendizado.
                     </div>
             
-                    <h2 className={styles.title}>1. Nossos valores:</h2>
+                    <h2 id='NossosValores' className={styles.title}>1. Nossos valores:</h2>
             
                     <div className={styles.content_text}>
                         <p><b>SOMOS COMPROMETIDOS</b><br/>
@@ -77,7 +78,7 @@ export default function Page(){
                         Acreditamos que as diferenças nos tornam mais fortes.
                     </div>
             
-                    <h2 className={styles.title}>2. Nossa plataforma é gratuita para todos os usuários:</h2>
+                    <h2 id='Gratuidade' className={styles.title}>2. Nossa plataforma é gratuita para todos os<br/> usuários:</h2>
 
                     <div className={styles.content_text}>
             
@@ -92,14 +93,14 @@ export default function Page(){
                             até a conclusão de cadastro.
                         </p><br/>
                         
-                        <h3>2.1. Responsabilidades MinhaCena.Org:</h3><br/>
+                        <h3>2.1. Responsabilidades MinhaCena.Org:</h3>
                         
                         <p>• Acompanhamento do processo das inscrições;<br/>
                         • Curadoria dos perfis de escolas/professores e ilustradores voluntários;<br/>
                         • Atendimento e suporte para voluntários;<br/>
                         • Divulgação de vagas através de Newsletter, redes sociais e outros canais de comunicação.</p>
                         
-                        <h3>2.2. Responsabilidades Escolas:</h3><br/>
+                        <h3>2.2. Responsabilidades Escolas:</h3>
                         
                         <p>• Orientar pais de alunos sobre o voluntariado das atividades na plataforma;</p>
                         
@@ -110,7 +111,7 @@ export default function Page(){
                         • Atenção e cuidado no formato e linguagem da ilustração.
                     </div>
             
-                    <h2 className={styles.title}>3. Perfis:</h2>
+                    <h2 id='Perfis' className={styles.title}>3. Perfis:</h2>
             
                     <div className={styles.content_text}>Conforme informado acima, todos os perfis e vagas de voluntariado no site 
                         passam por aprovação prévia, e observamos os seguintes critérios:
@@ -124,10 +125,10 @@ export default function Page(){
                         <p>Disponibilizamos login de acesso gratuito a dashboard em nosso site (www.minhacena.org) para perfis 
                         de ilustradores voluntários que completarem o cadastro com as seguintes informações:<br/></p>
                         
-                        <ul>• Portfólio</ul>
-                        <ul>• Qual o público atendido;</ul>
-                        <ul>• Informações para contato;</ul>
-                        <ul>• Qual a disponibilidade que os(as) voluntários(as) devem ter para a ação.</ul>
+                        <p className={styles.content_list}>• Portfólio<br/>
+                        • Qual o público atendido;<br/>
+                        • Informações para contato;<br/>
+                        • Qual a disponibilidade que os(as) voluntários(as) devem ter para a ação.</p>
                         
                         <p>Destacamos que não serão publicadas ilustrações: (i) com viés ou ligadas a movimentos políticos, (ii) 
                         que tenham a finalidade de evangelização, (iii) que violem direitos humanos, ambientais, e a diversidade 
@@ -143,17 +144,18 @@ export default function Page(){
                         
                         <h4>3.2.1. Informações relevantes para inserção da escola na plataforma;</h4>
                         
-                        <ul>• Se o segmento é público, privada ou ONG;</ul>
-                        <ul>• Qual a importância dessa atividade na escola;</ul>
-                        <ul>• Dados dos Professores voluntários responsáveis pelo login</ul>
+                        <p className={styles.content_list}>• Se o segmento é público, privada ou ONG;<br/>
+                        • Qual a importância dessa atividade na escola;<br/>
+                        • Dados dos Professores voluntários responsáveis pelo login</p>
                         
                         <h4>3.2.2. Regras gerais para aprovação;<br/></h4>
                         
-                        <ul>• Não aprovamos no site, perfis de escolas, professores ou ilustradores que tenham finalidade de 
-                        evangelização, mesmo que seja atividade secundária;</ul>
+                        <p className={styles.content_list}>• Não aprovamos no site, perfis de escolas, professores ou ilustradores que tenham<br/>
+                        finalidade de 
+                        evangelização, mesmo que seja atividade secundária;<br/>
 
-                        <ul>• O MinhaCena.Org se reserva no direito da exclusão de perfis de ilustradores aprovados, que reiteradamente, 
-                        deixam de responder as redações publicadas na dashboard pelos professores.</ul>
+                        • O MinhaCena.Org se reserva no direito da exclusão de perfis de ilustradores aprovados,<br/> que reiteradamente, 
+                        deixam de responder as redações publicadas na dashboard pelos professores.</p>
                         
                         <h4>3.2.3. Sobre direitos autorais;<br/></h4>
                         
@@ -171,7 +173,7 @@ export default function Page(){
                         Informamos que, o MinhaCena.Org poderá bloquear usuários que não observarem o disposto neste termo de uso.
                     </div>
             
-                    <h2 className={styles.title}>4. Lei Geral de Proteção de Dados:</h2>
+                    <h2 id='LGPD' className={styles.title}>4. Lei Geral de Proteção de Dados:</h2>
             
                     <div className={styles.content_text}><p>Por fim, em cumprimento ao disposto na Lei n.º 13.709/18, 
                      mais conhecida como Lei Geral de Proteção de Dados - LGPD, 
@@ -179,9 +181,9 @@ export default function Page(){
                      pessoas físicas e empresas, públicas e privadas, ratificamos os dados que serão tratados 
                      através da nossa plataforma:</p>
             
-                        <ul>• Dados pessoais: nome, e-mail, telefone, data de nascimento, gênero;</ul>
-                        <ul>• Causas de interesse;</ul>
-                        <ul>• Habilidades pessoais;</ul>
+                        <p className={styles.content_list}>• Dados pessoais: nome, e-mail, telefone, data de nascimento, gênero;<br/>
+                        • Causas de interesse;<br/>
+                        • Habilidades pessoais;</p>
                         
                         <p>Todos os dados disponibilizados pelos usuários no momento do cadastro no nosso site, 
                         mediante expressa autorização, serão tratados única e exclusivamente para permitir a 
@@ -195,7 +197,7 @@ export default function Page(){
                         <p>Para garantir a transparência da relação mantida com você e todos nossos parceiros, a MinhaCena.Org disponibiliza, 
                             em sua Plataforma, o Aviso de Privacidade aos seus usuários. Nele, podem ser encontrados os dados pessoais tratados
                             pela MinhaCena.Org e as finalidades a que se destinam, além da descrição dos direitos dos titulares e o canal de comunicação
-                            para o exercício desses direitos.
+                            para o exercício desses direitos. 
                         </p><br/>
                         
                         <strong>Equipe MinhaCena.Org</strong>
