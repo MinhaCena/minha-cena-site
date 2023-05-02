@@ -1,9 +1,9 @@
-.header{
+.header {
 	width: 100%;
 	height: 80px;
 	display: flex;
 	justify-content: center;
-	position:	sticky;
+	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 3;
@@ -11,7 +11,7 @@
 	border-bottom: 1px solid $primary-byzantine-6;
 	-webkit-backface-visibility: hidden;
 
-  .headerContent{
+	.headerContent {
 		width: 100%;
 		display: flex;
 		padding: 0 2.4rem;
@@ -22,24 +22,24 @@
 			flex-direction: row;
 			align-items: center;
 		}
-		@media(min-width: 1280px){
-			padding: 0
+		@media (min-width: 1280px) {
+			padding: 0;
 		}
 
-		.headerLeft{
+		.headerLeft {
 			display: flex;
 			width: 100%;
 			align-items: center;
 
-			.headerLeftContent{
+			.headerLeftContent {
 				width: 100%;
 				display: none;
 
 				@media (min-width: 1024px) {
 					display: flex;
 					justify-content: space-between;
-			 }
-				.headerNav{
+				}
+				.headerNav {
 					height: 80px;
 					display: flex;
 					justify-content: center;
@@ -47,12 +47,12 @@
 					margin-left: 1.6rem;
 					margin-right: 1.6rem;
 
-					@media(min-width: 1280px){
+					@media (min-width: 1280px) {
 						margin-left: 6.4rem;
 						margin-right: 2.4rem;
 					}
 
-					.headerNavLink{
+					.headerNavLink {
 						display: inline-flex;
 						height: 100%;
 						align-items: center;
@@ -62,11 +62,11 @@
 						font-weight: 600;
 						position: relative;
 
-						@media(min-width: 1280px){
+						@media (min-width: 1280px) {
 							padding: 0 1.6rem;
 						}
-						&::after{
-							content: "";
+						&::after {
+							content: '';
 							width: 100%;
 							height: 0;
 							position: absolute;
@@ -77,24 +77,24 @@
 							transition: 0.8s ease-in-out;
 							z-index: -1;
 						}
-						&:hover::after{
+						&:hover::after {
 							opacity: 1;
 							height: 100%;
 							background: $gradient-7;
 						}
-						&:active::after{
+						&:active::after {
 							opacity: 1;
 							height: 100%;
 							background: $gradient-7;
 						}
 
-						@media(min-width: 1280px){
+						@media (min-width: 1280px) {
 							font-size: $fs-btn-link-m;
 						}
 					}
 				}
 
-				.headerAction{
+				.headerAction {
 					display: flex;
 					align-items: center;
 					justify-content: flex-end;
@@ -103,11 +103,11 @@
 					font-size: $fs-btn-link-s;
 					font-weight: 600;
 
-					@media( min-width: 1280px){
+					@media (min-width: 1280px) {
 						font-size: $fs-btn-link-m;
 					}
 
-					.headerActionSubscribe{
+					.headerActionSubscribe {
 						width: 100%;
 						max-width: 25.6rem;
 						height: 4.8rem;
@@ -118,19 +118,19 @@
 						border-radius: 8px;
 						color: $accent-ultramarine-1;
 						border: 2px solid $accent-ultramarine-1;
-						svg{
+						svg {
 							fill: $accent-ultramarine-1;
 							margin-left: 4px;
 						}
 
-						&:hover{
+						&:hover {
 							color: $gray-12;
-							svg{
+							svg {
 								fill: $gray-12;
 							}
 						}
-						&::after{
-							content: "";
+						&::after {
+							content: '';
 							width: 100%;
 							height: 0;
 							position: absolute;
@@ -139,23 +139,20 @@
 							background: $gray-12;
 							transition: 550ms ease-in-out;
 							z-index: -1;
-
 						}
-						&:hover::after{
+						&:hover::after {
 							opacity: 1;
 							height: 100%;
 							background: $accent-ultramarine-1;
 						}
-						&:active::after{
+						&:active::after {
 							opacity: 1;
 							height: 100%;
 							background: $accent-ultramarine-1;
-
 						}
-
 					}
 
-					.headerActionLogin{
+					.headerActionLogin {
 						width: 100%;
 						max-width: 12.8rem;
 						height: 4.8rem;
@@ -166,19 +163,19 @@
 						border-radius: 8px;
 						color: $primary-byzantine-1;
 						border: 2px solid $primary-byzantine-1;
-						svg{
+						svg {
 							fill: $primary-byzantine-1;
 							margin-left: 4px;
 						}
 
-						&:hover{
+						&:hover {
 							color: $gray-12;
-							svg{
+							svg {
 								fill: $gray-12;
 							}
 						}
-						&::after{
-							content: "";
+						&::after {
+							content: '';
 							width: 100%;
 							height: 0;
 							position: absolute;
@@ -187,30 +184,23 @@
 							background: $gray-12;
 							transition: 550ms ease-in-out;
 							z-index: -1;
-
 						}
-						&:hover::after{
+						&:hover::after {
 							opacity: 1;
 							height: 100%;
 							background: $primary-byzantine-1;
 						}
 
-						&:active::after{
+						&:active::after {
 							opacity: 1;
 							height: 100%;
 							background: $primary-byzantine-1;
 						}
-
 					}
 				}
-
 			}
 
-			.headerLeftContentShow{
-				position: static;
-				height: 100%;
-				display: flex;
-
+			.headerLeftContentShow {
 				@media (max-width: 1023px) {
 					position: absolute;
 					left: 0px;
@@ -226,44 +216,41 @@
 					z-index: 0;
 				}
 
-				.headerNav{
-					padding: 0;
-					height: auto;
-					margin: 0;
-
-					@media (max-width: 1023px){
+				.headerNav {
+					@media (max-width: 1023px) {
+						padding: 0;
+						height: auto;
+						margin: 0;
 						flex-direction: column;
 					}
-					.headerNavLink{
-						display: flex;
-						flex-direction: row;
-						padding: 2.4rem 0;
-
+					.headerNavLink {
+						@media (max-width: 1023px) {
+							display: flex;
+							flex-direction: row;
+							padding: 2.4rem 0;
+						}
 					}
 				}
-				.headerAction{
-					width: 100%;
-					justify-content: center;
-					flex-direction: column;
-					align-items: center;
-					margin-top: 2.4rem;
-					gap: 3.2rem;
-
-					@media (min-width: 768px){
+				.headerAction {
+					
+					@media (max-width: 1023px) {
+						width: 100%;
+						justify-content: center;
+						flex-direction: column;
+						align-items: center;
+						margin-top: 2.4rem;
+						gap: 3.2rem;
 						margin: 0;
-						flex-direction: row;
 					}
 				}
-
 			}
-
 		}
 
-		.headerRight{
+		.headerRight {
 			display: flex;
 			justify-content: flex-end;
 
-			.headerNavToggle{
+			.headerNavToggle {
 				order: 2;
 				width: 32px;
 				height: 32px;
@@ -273,19 +260,18 @@
 				border: none;
 				background: transparent;
 
-				.headerNavToggleIcon{
+				.headerNavToggleIcon {
 					width: 40px;
 					height: 40px;
 				}
 
-				svg{
+				svg {
 					color: greens;
 				}
 				@media (min-width: 1024px) {
 					display: none;
-			 }
+				}
 			}
 		}
-  }
+	}
 }
-
