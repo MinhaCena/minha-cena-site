@@ -1,5 +1,5 @@
 
-# Guia de contribuição para o site (landing page) do MinhaCena
+# Guia de contribuição para o frontend do Cadastro e User Dashboard do MinhaCena
 
 ## Instalação
 
