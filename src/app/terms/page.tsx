@@ -1,32 +1,136 @@
+"use client"
 import Image from 'next/image'
 import styles from './styles.module.scss'
+import { use, useState } from 'react'
 
 export default function Page(){
+
+    const [isMenuClicked, setMenuclicked] = useState(false);
+
+    const updateMenu = () =>{
+        setMenuclicked(!isMenuClicked);
+    }
+
     return(
         <>
-            <header className={styles.navbar}>
-                <Image src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
+            <header className={`navbar ${isMenuClicked ? "open" : ""}`}>
+                <Image className={styles.logo} src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
                 <form className={styles.search_box}>
-                    <Image src="/img/terms/tabler_search.png" width={10.37} height={10.37} alt='search' />
-                    <input className={styles.search} type="search" placeholder="Pesquise dentro do termo..."/>
+                    <Image 
+                        src="/img/terms/tabler_search.png" 
+                        width={10.37} 
+                        height={10.37} 
+                        alt='search' 
+                    />
+                    <input 
+                        className={styles.search} 
+                        type="search" 
+                        placeholder="Pesquise dentro do termo..."
+                    />
                 </form>
+
+                <div className={styles.icon} onClick={updateMenu}>
+                    <div className={styles.icon_bar}></div>
+                    <div className={styles.icon_bar}></div>
+                    <div className={styles.icon_bar}></div>
+                </div>
             </header>
 
-            <aside className={styles.sidebar}>
+            {isMenuClicked &&(
+                <div className={styles.menu}>
+                    <div className={styles.menu_box}>
+                        <div className={styles.menu_list}>
+                            <div className={styles.menu_item}>
+                                <Image 
+                                    src="/img/terms/VectorNossosValores.png" 
+                                    alt='NossosValores' 
+                                    width={13.75} 
+                                    height={13.75}
+                                />
+                                <a className={styles.menu_link} href='#NossosValores'>Nossos Valores</a>
+                            </div>
 
-                <ul className={styles.sidebar_box}>
-                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                            <div className={styles.menu_item}>
+                                <Image 
+                                    src="/img/terms/Gratuidade.png" 
+                                    alt='Gratuidade' 
+                                    width={13.75} 
+                                    height={13.75}
+                                />
+                                <a className={styles.menu_link} href='#Gratuidade'>Gratuidade</a>
+                            </div>
+
+                            <div className={styles.menu_item}>
+                                <Image 
+                                    src="/img/terms/Perfis.png" 
+                                    alt='Perfis' 
+                                    width={13.75} 
+                                    height={13.75}
+                                />
+                                <a className={styles.menu_link} href='#Perfis'>Perfis</a>
+                            </div>
+
+                            <div className={styles.menu_item}>
+                                <Image 
+                                    src="/img/terms/LGPD.png" alt='LGPD' 
+                                    width={13.75} 
+                                    height={13.75}
+                                />
+                                <a className={styles.menu_link} href='#LGPD'>LGPD</a>
+                            </div>
+
+                            <div className={styles.menu_vector}></div>
+
+                            <div className={styles.menu_otherlink}>
+                                <a className={styles.menu_link} href='#LGPD'>Voltar</a>
+                            </div>
+
+                            <div className={styles.menu_otherlink}>
+                                <a className={styles.menu_link} href='#LGPD'>Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            <aside className={styles.sidebar}>
+                <div className={styles.sidebar_box}>
+                    <Image 
+                        className={styles.sidebar_icon}
+                        src="/img/terms/arrow.png" 
+                        width={8} 
+                        height={14} 
+                        alt='link'
+                    />
                     <a className={styles.sidebar_item} href="#NossosValores">NOSSOS VALORES</a>
 
-                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <Image 
+                        className={styles.sidebar_icon}
+                        src="/img/terms/arrow.png" 
+                        width={8} 
+                        height={14} 
+                        alt='link'
+                    />
                     <a className={styles.sidebar_item} href="#Gratuidade">GRADUATE</a>
 
-                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <Image 
+                        className={styles.sidebar_icon}
+                        src="/img/terms/arrow.png" 
+                        width={8} 
+                        height={14} 
+                        alt='link'
+                    />
                     <a className={styles.sidebar_item} href="#Perfis">PERFIS</a>
 
-                    <Image className={styles.sidebar_icon} src="/img/terms/arrow.png" width={8} height={14} alt='link'/>
+                    <Image 
+                        className={styles.sidebar_icon}
+                        src="/img/terms/arrow.png" 
+                        width={8} 
+                        height={14} 
+                        alt='link'
+                    />
                     <a className={styles.sidebar_item} href="#LGPD">LGPD</a>
-                </ul>
+                </div>
             </aside>
 
             <div className={styles.content}>
