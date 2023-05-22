@@ -13,7 +13,7 @@ export default function Page(){
 
     return(
         <>
-            <header className={`navbar ${isMenuClicked ? "open" : ""}`}>
+            <header className={styles.navbar}>
                 <Image className={styles.logo} src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
                 <form className={styles.search_box}>
                     <Image 
