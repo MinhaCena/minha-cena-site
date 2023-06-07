@@ -1,4 +1,3 @@
-
 # Guia de contribuição para o site (landing page) do MinhaCena
 
 ## Instalação

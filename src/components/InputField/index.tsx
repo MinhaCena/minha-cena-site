@@ -29,7 +29,7 @@ const InputField: FC<InputProps> = ({
 		<div
 			className={styles.inputFieldGroup}
 			style={{
-				marginTop: `${marginInputGroup}`,
+				margin: `${marginInputGroup} 0`,
 				maxWidth: `${maxWidth}rem`,
 			}}
 		>
