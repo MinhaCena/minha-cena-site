@@ -14,7 +14,13 @@
     border-color: rgba(239, 220, 235, 1);
 }
 
-.search_box{
+.navbarBoxSearch{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarSearch{
+    z-index: 3;
     background-color: #EEEEEF;
     border-radius: 12px;
     width: max-content;
@@ -23,16 +29,28 @@
     align-items: center;
     padding-right: 32px;
     padding-left: 1em;
+    max-width: 400px;
 }
 
-.search{
+.navbarSearchBox{
     background-color: #EEEEEF;
     padding-left: 1em;
     height: 32px;
     width: 328px;
     border: none;
     outline: none;
+}
 
+.navbarAutocomplete{
+    margin-top: 3.5em;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    list-style: none;
+    background-color: #EEEEEF;
+    width: 380px;
+    border-radius: 12px;
+    height: 6em;
 }
 
 .sidebar{
@@ -48,7 +66,7 @@
     border-color: rgba(239, 220, 235, 1);
 }
 
-.sidebar_box{
+.sidebarBox{
     width: 270px;
     padding-top: 16px;
     text-align: left;
@@ -56,7 +74,7 @@
     padding-left: 0;
 }
 
-.sidebar_item{
+.sidebarItem{
     width: 200px;
     height: 40px;
     display: inline-flex;
@@ -70,7 +88,7 @@
     line-height: 16px;
 }
 
-.sidebar_icon{
+.sidebarIcon{
     display: inline-flex;
     margin-left: 4em;
 }
@@ -82,13 +100,13 @@
     padding-right: 5em; 
 }
 
-.content_box{
+.contentBox{
     padding-top: 5em;
     margin-left: 120px;
     width: 856px;
 }
 
-.title_principal{
+.contentTitlePrincipal{
     font-family: 'Euclid Circular B';
     font-style: normal;
     font-weight: 700;
@@ -105,7 +123,7 @@
     margin-top: 40px;
 }
 
-.content_text{
+.contentText{
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
@@ -124,10 +142,11 @@
     line-height: 26px;
 }
 
-.icon{
+.navbarIcon{
     display: none;
 }
 
 .menu{
     display: none;
 }
+

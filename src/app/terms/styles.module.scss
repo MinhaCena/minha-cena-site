@@ -11,13 +11,18 @@
         padding: 4px 2.5%;
     }
 
-    .search{
+    .navbarSearchBox{
         width: 525px;
         height: 50px;
         font-size: 24px;
     }
 
-    .search_box{
+    .navbarAutocomplete{
+        margin-top: 5.5em;
+        width: 400px;
+    }
+
+    .navbarSearch{
         border-radius: 12px;
         width: max-content;
         height: 50px;
@@ -28,19 +33,19 @@
         width: 400px;
     }
 
-    .sidebar_box{
+    .sidebarBox{
         width: 350px;
         padding-top: 46px;
     }
 
-    .sidebar_item{
+    .sidebarItem{
         width: 300px;
         height: 100px;
         font-size: 29px;
         line-height: 36px;
     }
 
-    .title_principal{
+    .titlePrincipal{
         font-size: 70px;
     }
 
@@ -48,12 +53,12 @@
         font-size: 65px;
     }
 
-    .content_text{
+    .contentText{
         font-size: 3em;
         line-height: 60px;
     }
 
-    .content_box{
+    .contentBox{
         width: 150em;
         margin-left: 200px;
         margin-top: 7em;
@@ -62,8 +67,12 @@
 
 @media screen and (max-width: 1250px){
 
-    .search{
+    .navbarSearchBox{
         width: 228px;
+    }
+
+    .navbarAutocomplete{
+        width: 280px;
     }
 
     .sidebar{
@@ -71,19 +80,19 @@
         height: 100%;
     }
 
-    .sidebar_box{
+    .sidebarBox{
         width: 200px;
         padding-top: 18px;
     }
 
-    .sidebar_item{
+    .sidebarItem{
         width: 150px;
         height: 40px;
         font-size: 12px;
         line-height: 12px;
     }
 
-    .sidebar_icon{
+    .sidebarIcon{
         margin-left: 20px;
     }
 
@@ -91,13 +100,13 @@
         padding-left: 5.5em;
     }
 
-    .content_box{
+    .contentBox{
         width: 60vw;
     }
 }
 
 @media screen and (max-width: 535px){
-    .sidebar,.search,.search_box{
+    .sidebar,.navbarSearchBox,.navbarSearch{
         display: none;
     }
 
@@ -107,12 +116,16 @@
         padding: 4px 3.5%;
     }
 
-    .logo{
+    .navbarLogo{
         width: 104px;
         height: 16px;
     }
 
-    .title_principal{
+    .navbarAutocomplete{
+        display: none;
+    }
+
+    .titlePrincipal{
         font-size: 32px;
     }
 
@@ -124,7 +137,7 @@
         padding-left: 0; 
     }
     
-    .content_box{
+    .contentBox{
         margin-left: 24px;
         width: 312px;
     }
@@ -133,14 +146,14 @@
         margin-left: 1em;
     }
 
-    .icon{
+    .navbarIcon{
         display: initial;
         z-index: 1;
         cursor: pointer;
         width: 24px;
     }
 
-    .icon_bar{
+    .navbarIconBar{
         z-index: 1;
         width: 16px;
         height: 1.6px;
@@ -159,34 +172,34 @@
         background-color: #FEFEFE;
     }
 
-    .menu_box{
+    .menuBox{
         width: 214px;
     }
 
-    .menu_list{
+    .menuList{
         width: 214px;
         height: 248px;
         margin-left: 15.33px;
     }
 
-    .menu_item{
+    .menuListItem{
         padding-top: 20px;
         font-size: 12px;
 
-        .menu_link{  
+        .menuListItemlink{  
             height: 16px;
             padding-left: 11.34px;
         }
     }
 
-    .menu_vector{
+    .menuListVector{
         margin-top: 20px;
         width: 72px;
         height: .5px;
         background: linear-gradient(135deg, #EFDCEB 0%, #DACFFC 100%);
     }
 
-    .menu_otherlink{
+    .menuListLink{
         font-size: 12px;
         padding-top: 20px;
         background: linear-gradient(135deg, #A84E61 0%, #470FF4 100%);
@@ -196,12 +209,12 @@
 }
 
 @media screen and (max-width: 360px){
-    .content_box{
+    .contentBox{
         margin-left: 24px;
         width: 80vw;
     }
 
-    .title_principal{
+    .titlePrincipal{
         font-size: 3em;
     }
 }

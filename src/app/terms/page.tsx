@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import styles from './styles.module.scss'
 import { use, useState } from 'react'
+import {Searchbar} from './Searchbar'
 
 export default function Page(){
 
@@ -14,79 +15,66 @@ export default function Page(){
     return(
         <>
             <header className={styles.navbar}>
-                <Image className={styles.logo} src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
-                <form className={styles.search_box}>
-                    <Image 
-                        src="/img/terms/tabler_search.png" 
-                        width={10.37} 
-                        height={10.37} 
-                        alt='search' 
-                    />
-                    <input 
-                        className={styles.search} 
-                        type="search" 
-                        placeholder="Pesquise dentro do termo..."
-                    />
-                </form>
+                <Image className={styles.navbarLogo} src="/img/terms/Vector.png" width={170} height={24} alt='logo'/>
+                <Searchbar/>
 
-                <div className={styles.icon} onClick={updateMenu}>
-                    <div className={styles.icon_bar}></div>
-                    <div className={styles.icon_bar}></div>
-                    <div className={styles.icon_bar}></div>
+                <div className={styles.navbarIcon} onClick={updateMenu}>
+                    <div className={styles.navbarIconBar}></div>
+                    <div className={styles.navbarIconBar}></div>
+                    <div className={styles.navbarIconBar}></div>
                 </div>
             </header>
-
             {isMenuClicked &&(
                 <div className={styles.menu}>
-                    <div className={styles.menu_box}>
-                        <div className={styles.menu_list}>
-                            <div className={styles.menu_item}>
+                    <div className={styles.menuBox}>
+                        <div className={styles.menuList}>
+                            <div className={styles.menuListItem}>
                                 <Image 
                                     src="/img/terms/VectorNossosValores.png" 
                                     alt='NossosValores' 
                                     width={13.75} 
                                     height={13.75}
                                 />
-                                <a className={styles.menu_link} href='#NossosValores'>Nossos Valores</a>
+                                <a className={styles.menuListItemLink} href='#NossosValores'>Nossos Valores</a>
                             </div>
 
-                            <div className={styles.menu_item}>
+                            <div className={styles.menuListItem}>
                                 <Image 
                                     src="/img/terms/Gratuidade.png" 
                                     alt='Gratuidade' 
                                     width={13.75} 
                                     height={13.75}
                                 />
-                                <a className={styles.menu_link} href='#Gratuidade'>Gratuidade</a>
+                                <a className={styles.menuListItemLink} href='#Gratuidade'>Gratuidade</a>
                             </div>
 
-                            <div className={styles.menu_item}>
+                            <div className={styles.menuListItem}>
                                 <Image 
                                     src="/img/terms/Perfis.png" 
                                     alt='Perfis' 
                                     width={13.75} 
                                     height={13.75}
                                 />
-                                <a className={styles.menu_link} href='#Perfis'>Perfis</a>
+                                <a className={styles.menuListItemLink} href='#Perfis'>Perfis</a>
                             </div>
 
-                            <div className={styles.menu_item}>
+                            <div className={styles.menuListItem}>
                                 <Image 
                                     src="/img/terms/LGPD.png" alt='LGPD' 
                                     width={13.75} 
                                     height={13.75}
                                 />
-                                <a className={styles.menu_link} href='#LGPD'>LGPD</a>
+                                <a className={styles.menuListItemLink} href='#LGPD'>LGPD</a>
                             </div>
 
-                            <div className={styles.menu_vector}></div>
+                            <div className={styles.menuListVector}></div>
 
-                            <div className={styles.menu_otherlink}>
-                                <a className={styles.menu_link} href='#LGPD'>Voltar</a>
+                            <div className={styles.menuListLink}>
+                                <a className={styles.menuListItemLink} href='#LGPD'>Voltar</a>
                             </div>
 
-                            <div className={styles.menu_otherlink}>
-                                <a className={styles.menu_link} href='#LGPD'>Homepage</a>
+                            <div className={styles.menuListLink}>
+                                <a className={styles.menuListItemLink} href='#LGPD'>Homepage</a>
                             </div>
                         </div>
                     </div>
@@ -94,51 +82,51 @@ export default function Page(){
             )}
 
             <aside className={styles.sidebar}>
-                <div className={styles.sidebar_box}>
+                <div className={styles.sidebarBox}>
                     <Image 
-                        className={styles.sidebar_icon}
+                        className={styles.sidebarIcon}
                         src="/img/terms/arrow.png" 
                         width={8} 
                         height={14} 
                         alt='link'
                     />
-                    <a className={styles.sidebar_item} href="#NossosValores">NOSSOS VALORES</a>
+                    <a className={styles.sidebarItem} href="#NossosValores">NOSSOS VALORES</a>
 
                     <Image 
-                        className={styles.sidebar_icon}
+                        className={styles.sidebarIcon}
                         src="/img/terms/arrow.png" 
                         width={8} 
                         height={14} 
                         alt='link'
                     />
-                    <a className={styles.sidebar_item} href="#Gratuidade">GRADUATE</a>
+                    <a className={styles.sidebarItem} href="#Gratuidade">GRATUIDADE</a>
 
                     <Image 
-                        className={styles.sidebar_icon}
+                        className={styles.sidebarIcon}
                         src="/img/terms/arrow.png" 
                         width={8} 
                         height={14} 
                         alt='link'
                     />
-                    <a className={styles.sidebar_item} href="#Perfis">PERFIS</a>
+                    <a className={styles.sidebarItem} href="#Perfis">PERFIS</a>
 
                     <Image 
-                        className={styles.sidebar_icon}
+                        className={styles.sidebarIcon}
                         src="/img/terms/arrow.png" 
                         width={8} 
                         height={14} 
                         alt='link'
                     />
-                    <a className={styles.sidebar_item} href="#LGPD">LGPD</a>
+                    <a className={styles.sidebarItem} href="#LGPD">LGPD</a>
                 </div>
             </aside>
 
             <div className={styles.content}>
 
-                <div className={styles.content_box}>
-                    <h1 className={styles.title_principal}>TERMO GERAL DE USO</h1>
+                <div className={styles.contentBox}>
+                    <h1 className={styles.contentTitlePrincipal}>TERMO GERAL DE USO</h1>
 
-                    <div className={styles.content_text}>
+                    <div className={styles.contentText}>
                         Seja muito bem vindo(a)!<br/>
                         O MinhaCena.Org é uma plataforma de 
                         engajamento social que conecta professores 
@@ -157,7 +145,7 @@ export default function Page(){
             
                     <h2 id='NossosValores' className={styles.title}>1. Nossos valores:</h2>
             
-                    <div className={styles.content_text}>
+                    <div className={styles.contentText}>
                         <p><b>SOMOS COMPROMETIDOS</b><br/>
                         Soluções comprometidas com transformações positivas.</p>
                         <br/>
@@ -184,7 +172,7 @@ export default function Page(){
             
                     <h2 id='Gratuidade' className={styles.title}>2. Nossa plataforma é gratuita para todos os<br/> usuários:</h2>
 
-                    <div className={styles.content_text}>
+                    <div className={styles.contentText}>
             
                         <p>(i) para as escolas e professores a partir de seus projetos de redação, e</p><br/>
             
@@ -217,7 +205,7 @@ export default function Page(){
             
                     <h2 id='Perfis' className={styles.title}>3. Perfis:</h2>
             
-                    <div className={styles.content_text}>Conforme informado acima, todos os perfis e vagas de voluntariado no site 
+                    <div className={styles.contentText}>Conforme informado acima, todos os perfis e vagas de voluntariado no site 
                         passam por aprovação prévia, e observamos os seguintes critérios:
                         <br/>
                         <h3><p>3.1. Perfis dos Ilustradores:<br/></p></h3>
@@ -279,7 +267,7 @@ export default function Page(){
             
                     <h2 id='LGPD' className={styles.title}>4. Lei Geral de Proteção de Dados:</h2>
             
-                    <div className={styles.content_text}><p>Por fim, em cumprimento ao disposto na Lei n.º 13.709/18, 
+                    <div className={styles.contentText}><p>Por fim, em cumprimento ao disposto na Lei n.º 13.709/18, 
                      mais conhecida como Lei Geral de Proteção de Dados - LGPD, 
                      que estabelece novas regras para o tratamento de dados pessoais por 
                      pessoas físicas e empresas, públicas e privadas, ratificamos os dados que serão tratados 
